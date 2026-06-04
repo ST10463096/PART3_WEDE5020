@@ -1,0 +1,780 @@
+<!DOCTYPE html>
+<!-- Declares the document type and version as HTML5 for proper browser rendering and standards compliance -->
+<html lang="en">
+    <!-- Root element of the HTML document. The 'lang' attribute sets the primary language to English for accessibility (screen readers) and SEO -->
+
+<head>
+    <!-- Contains meta-information about the document that is not displayed on the page itself -->
+    
+    <meta charset="UTF-8">
+    <!-- Specifies the character encoding for the document as UTF-8, which supports almost all international characters, symbols, and emojis -->
+    
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Ensures proper responsive behavior on mobile devices by setting the viewport width equal to the device's width and initial zoom scale to 1.0 -->
+     <meta name="description" content="welcome to blog page">
+     <meta name="keywords" content="why your business needs a website, articles trend and cybersecrity basics for beginners">
+    
+    <title>Blog | Nass Tech Solution</title>
+    <!-- Sets the title of the web page, which appears on the browser tab and in search engine results -->
+    
+    <link rel="stylesheet" href="css/style.css">
+    <!-- Links an external CSS stylesheet (located at css/style.css) to control the visual styling and layout of the page -->
+    
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <!-- Imports the Boxicons icon library from a CDN (Content Delivery Network), providing a wide range of scalable vector icons for use throughout the page -->
+    
+    <link rel="icon" href="images/logo/logo.png">
+    <!-- Sets the favicon (small icon displayed in the browser tab) to the company logo image -->
+</head>
+
+<body>
+    <!-- Contains all visible content of the web page that users interact with -->
+
+    <!-- ================= NAVIGATION BAR ================= -->
+    <!-- Creates the primary navigation menu at the top of the page for site-wide navigation -->
+    <nav>
+        <!-- Semantic HTML5 element specifically for navigation sections -->
+        
+        <div class="logo">
+            <!-- Container for the company logo -->
+            <img src="images/logo/logo.png" alt="Nass Tech Logo">
+            <!-- Displays the company logo image. The 'alt' attribute provides alternative text for screen readers and when images fail to load -->
+        </div>
+        
+        <ul class="nav-links">
+            <!-- Unordered list holding all primary navigation links -->
+            <li><a href="index.html">Home</a></li>
+            <!-- Link to the Home page -->
+            <li><a href="about_us.html">About</a></li>
+            <!-- Link to the About Us page -->
+            <li><a href="services.html">Services</a></li>
+            <!-- Link to the Services page -->
+            <li><a href="careers.html">Careers</a></li>
+            <!-- Link to the Careers/Jobs page -->
+            <li><a href="client-portal.html">Client Portal</a></li>
+            <!-- Link to the Client Portal (login-protected area for existing clients) -->
+            <li><a href="enquiries.html">Enquiry</a></li>
+            <!-- Link to the Enquiry page -->
+            <li><a href="contact_us.html">Contact</a></li>
+            <!-- Link to the Contact Us page -->
+            <li><a href="blog.html" class="active">Blog</a></li>
+            <!-- Link to the Blog page. The 'active' class highlights the current page in the navigation menu -->
+        </ul>
+        
+        <div class="nav-buttons">
+            <!-- Container for authentication/account action buttons -->
+            <a href="#" class="btn">Sign In</a>
+            <!-- Sign In button (placeholder link). Allows existing users to log into their account -->
+            <a href="#" class="btn logout">Sign Out</a>
+            <!-- Sign Out button with additional 'logout' class for specific styling -->
+        </div>
+    </nav>
+
+    <!-- ================= HERO SECTION ================= -->
+    <!-- Large promotional banner area at the top of the page to grab user attention and introduce the blog content -->
+    <section class="hero" style="background: linear-gradient(135deg, rgba(0,42,58,0.85), rgba(0,114,255,0.75)), url('images/hero/blogb.jpg'); background-size: cover; background-position: center;">
+        <!-- Inline style creates a dark gradient overlay (135-degree angle from dark teal to semi-transparent blue) over a background image (blogb.jpg). 
+             The overlay improves text readability. 'background-size: cover' ensures the image covers the entire section; 'background-position: center' centers the image -->
+        
+        <div class="hero-content">
+            <!-- Container for the hero text content -->
+            <h1>Latest Blog & Videos</h1>
+            <!-- Main heading of the hero section - clearly states the page contains both written and video content -->
+            <p>Insights, tutorials, and trends in web design, business websites, and cybersecurity.</p>
+            <!-- Supporting subheading describing the types of content available on the blog -->
+        </div>
+    </section>
+
+    <!-- ================= VIDEO BLOG CARDS SECTION ================= -->
+    <!-- Displays featured video content in card format, allowing users to watch embedded videos directly on the page -->
+    <section class="section">
+        <!-- Generic section container with class 'section' for consistent styling -->
+        
+        <h2>Featured Video Blogs</h2>
+        <!-- Section heading identifying this section contains video content -->
+        
+        <div class="cards">
+            <!-- Container using CSS Grid or Flexbox to display cards in a responsive grid layout -->
+            
+            <!-- ================= VIDEO CARD 1: Web Design Trends ================= -->
+            <div class="card">
+                <!-- Individual card component for one video blog -->
+                
+                <video controls poster="images/blog/web-design-poster.jpg">
+                    <!-- HTML5 video element with controls (play, pause, volume, etc.)
+                         The 'controls' attribute adds browser-native video playback controls
+                         The 'poster' attribute displays a preview image before the video starts playing -->
+                    
+                    <source src="videos/trends.mp4" type="video/mp4">
+                    <!-- Source element specifying the video file location and MIME type (MP4 format).
+                         Credit note: Content sourced from TikTok -->
+                    
+                    Your browser does not support the video tag.
+                    <!-- Fallback text displayed if the browser does not support the HTML5 video element -->
+                </video>
+                
+                <h3>🎨 Top Web Design Trends 2026</h3>
+                <!-- Video title with art palette emoji for visual appeal -->
+                
+                <p>Discover the latest web design trends including AI-powered interfaces, neumorphism, dark mode, and immersive 3D elements that are shaping the future of websites.</p>
+                <!-- Brief description of what viewers will learn from this video -->
+                
+                <p><small>📅 Jan 15, 2026 | 8 min read</small></p>
+                <!-- Metadata: publication date and estimated reading time. 'small' tag makes this text slightly smaller than the main text -->
+            </div>
+
+            <!-- ================= VIDEO CARD 2: Business Website ================= -->
+            <div class="card">
+                <video controls poster="images/blog/business-poster.jpg">
+                    <source src="videos/website.mp4" type="video/mp4">
+                    <!-- Credit note: Reference to TikTok as content source -->
+                    Your browser does not support the video tag.
+                </video>
+                <h3>💼 Why Your Business Needs a Website</h3>
+                <!-- Video title with briefcase emoji representing business -->
+                <p>Learn how a professional website increases credibility, generates leads, and helps you compete in the digital marketplace 24/7. Essential for business growth.</p>
+                <p><small>📅 Jan 10, 2026 | 6 min read</small></p>
+            </div>
+
+            <!-- ================= VIDEO CARD 3: Cybersecurity ================= -->
+            <div class="card">
+                <video controls poster="images/blog/cybersecurity_post.jpg">
+                    <source src="videos/cyber.mp4" type="video/mp4">
+                    <!-- Credit note: Reference to TikTok as content source -->
+                    Your browser does not support the video tag.
+                </video>
+                <h3>🛡️ Cybersecurity Basics</h3>
+                <!-- Video title with shield emoji representing security/protection -->
+                <p>Protect your business from ransomware, phishing attacks, and data breaches with these essential cybersecurity strategies every business should implement.</p>
+                <p><small>📅 Jan 5, 2026 | 10 min read</small></p>
+            </div>
+        </div>
+    </section>
+
+    <!-- ================= RECENT ARTICLES SECTION - 6 ARTICLES ================= -->
+    <!-- Displays written blog content in a card-based layout, each with an image, title, description, and read more link -->
+    <section class="section">
+        <h2>Recent Articles</h2>
+        <!-- Section heading for the written articles section -->
+        
+        <div class="cards">
+            <!-- Container for article cards (reusing the 'cards' class for consistent grid layout) -->
+            
+            <!-- ================= ARTICLE 1: Top Web Design Trends ================= -->
+            <div class="card">
+                <img src="images/blog/web.jpg" alt="Top Web Design Trends">
+                <!-- Article featured image. Credit note: Reference to wallpapercave.com as image source -->
+                <h3>🎨 Top Web Design Trends 2026</h3>
+                <!-- Article title with art palette emoji -->
+                <p>Explore the most innovative web design trends including AI-generated layouts, neumorphism, micro-interactions, and responsive design patterns that will dominate this year.</p>
+                <p><small>📅 Jan 14, 2026 | 5 min read</small></p>
+                <a href="#" class="btn" style="margin-top: 10px;">Read More</a>
+                <!-- 'Read More' button linking to the full article (currently placeholder '#') -->
+            </div>
+
+            <!-- ================= ARTICLE 2: Cybersecurity Basics ================= -->
+            <div class="card">
+                <img src="images/blog/cybersecurity.jpg" alt="Cybersecurity Basics">
+                <!-- Article featured image. Credit note: Reference to wallpapercave.com as image source -->
+                <h3>🔒 Cybersecurity Basics for Beginners</h3>
+                <!-- Article title with lock emoji representing security -->
+                <p>Learn the fundamentals of cybersecurity including strong passwords, two-factor authentication, secure networks, and how to spot phishing emails.</p>
+                <p><small>📅 Jan 12, 2026 | 7 min read</small></p>
+                <a href="#" class="btn" style="margin-top: 10px;">Read More</a>
+            </div>
+
+            <!-- ================= ARTICLE 3: Why Your Business Needs a Website ================= -->
+            <div class="card">
+                <img src="images/blog/business.jpg" alt="Why Your Business Needs a Website">
+                <!-- Article featured image. Credit note: Reference to wallpapercave.com as image source -->
+                <h3>💼 Why Your Business Needs a Website</h3>
+                <!-- Article title with briefcase emoji -->
+                <p>Discover 10 compelling reasons why every business needs a professional website, from 24/7 availability to global reach and customer trust.</p>
+                <p><small>📅 Jan 10, 2026 | 6 min read</small></p>
+                <a href="#" class="btn" style="margin-top: 10px;">Read More</a>
+            </div>
+
+            <!-- ================= ARTICLE 4: AI in Cybersecurity ================= -->
+            <div class="card">
+                <img src="images/blog/ai_and_cybersecurity.png" alt="AI in Cybersecurity">
+                <h3>🤖 AI in Cybersecurity</h3>
+                <!-- Article title with robot emoji representing artificial intelligence -->
+                <p>How artificial intelligence and machine learning are revolutionizing threat detection, incident response, and predictive security analytics in 2026.</p>
+                <p><small>📅 Jan 8, 2026 | 8 min read</small></p>
+                <a href="#" class="btn" style="margin-top: 10px;">Read More</a>
+            </div>
+
+            <!-- ================= ARTICLE 5: Cloud Security Trends ================= -->
+            <div class="card">
+                <img src="images/blog/cloudsecurity.jpg" alt="Cloud Security Trends">
+                <h3>☁️ Cloud Security Trends 2026</h3>
+                <!-- Article title with cloud emoji representing cloud computing -->
+                <p>Explore the latest cloud security trends including zero-trust architecture, multi-cloud security, CASB, and compliance automation for modern enterprises.</p>
+                <p><small>📅 Jan 6, 2026 | 7 min read</small></p>
+                <a href="#" class="btn" style="margin-top: 10px;">Read More</a>
+            </div>
+
+            <!-- ================= ARTICLE 6: Data Privacy Regulation ================= -->
+            <div class="card">
+                <img src="images/blog/act.jpg" alt="Data Privacy Regulation">
+                <h3>📜 Data Privacy Regulations</h3>
+                <!-- Article title with scroll/document emoji representing legal regulations -->
+                <p>Stay compliant with POPIA, GDPR, CCPA, and other data protection laws. Learn key requirements, penalties, and best practices for data handling.</p>
+                <p><small>📅 Jan 3, 2026 | 9 min read</small></p>
+                <a href="#" class="btn" style="margin-top: 10px;">Read More</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- ================= NEWSLETTER SUBSCRIPTION SECTION ================= -->
+    <!-- Email subscription form allowing users to sign up for blog updates and company newsletters -->
+    <section class="section">
+        <h2>Subscribe to Our Newsletter</h2>
+        <!-- Section heading encouraging users to subscribe for updates -->
+        
+        <div class="form-container" style="max-width: 500px;">
+            <!-- Container for the subscription form. Inline style limits the maximum width to 500px for better readability -->
+            
+            <form id="newsletterForm">
+                <!-- Form element with unique ID 'newsletterForm' for JavaScript access.
+                     No 'action' or 'method' attributes because submission is handled entirely by JavaScript -->
+                
+                <div class="input-group">
+                    <!-- Container for the form field -->
+                    <label><i class='bx bx-envelope'></i> Email Address *</label>
+                    <!-- Label with envelope icon. Asterisk indicates this field is required -->
+                    <input type="email" id="newsletterEmail" placeholder="Enter your email address" required>
+                    <!-- Email input field. 'type="email"' provides browser validation for proper email format.
+                         'required' attribute ensures the field cannot be left empty -->
+                </div>
+                
+                <button type="submit" class="btn-submit">
+                    <!-- Submit button with custom styling class -->
+                    <i class='bx bx-bell'></i> Subscribe
+                    <!-- Bell icon representing notifications/alerts -->
+                </button>
+            </form>
+            
+            <p id="newsletterMsg" style="text-align:center; margin-top:15px; display:none;"></p>
+            <!-- Hidden paragraph element that displays a success message after form submission.
+                 Initially hidden (display:none). When shown, it provides visual feedback to the user -->
+        </div>
+    </section>
+
+    <!-- ================= FOOTER ================= -->
+    <!-- Bottom section of the page containing copyright and legal information -->
+    <footer>
+        <!-- Semantic HTML5 element for footer content -->
+        <p>© 2026 Nass Tech Solution | All Rights Reserved</p>
+        <!-- Copyright notice with the company name, current year, and legal rights statement -->
+    </footer>
+
+    <!-- ================= JAVASCRIPT - NEWSLETTER FORM HANDLING ================= -->
+    <!-- Client-side JavaScript that handles newsletter subscription form validation and user feedback -->
+    <script>
+        // Newsletter form submission handler
+        // Select the newsletter form element by its ID and attach an event listener for the 'submit' event
+        document.getElementById('newsletterForm').addEventListener('submit', function(e) {
+            // 'e' is the event object representing the form submission event
+            
+            e.preventDefault();
+            // Prevents the default form submission behavior (which would reload the page).
+            // This allows us to handle the subscription entirely with JavaScript for a smoother user experience.
+            
+            // ================= FORM DATA EXTRACTION =================
+            const email = document.getElementById('newsletterEmail').value.trim();
+            // Retrieve the value from the email input field and remove leading/trailing whitespace
+            
+            // ================= VALIDATION =================
+            if(email === "") {
+                // Check if the email field is empty
+                alert("Please enter your email address.");
+                // Show a warning alert box
+                return;
+                // Exit the function early - do not proceed
+            }
+            
+            // ================= SUCCESS RESPONSE =================
+            // If validation passes, display a success message to the user
+            
+            const msg = document.getElementById('newsletterMsg');
+            // Select the response message paragraph element
+            
+            msg.style.display = 'block';
+            // Change the display style from 'none' to 'block' to make the message visible
+            
+            msg.innerHTML = `<i class='bx bx-check-circle'></i> ✅ Thank you for subscribing! You'll receive our latest updates.`;
+            // Set the HTML content of the response message with a checkmark icon and thank you message.
+            // Template literals (backticks) allow embedding HTML and icons directly.
+            
+            msg.style.color = '#00c6ff';
+            // Set the text color to a bright cyan/blue color for visual appeal
+            
+            msg.style.background = '#e8f4fd';
+            // Set a light blue background color behind the message
+            
+            msg.style.padding = '12px';
+            // Add 12 pixels of padding inside the message box for comfortable spacing
+            
+            msg.style.borderRadius = '10px';
+            // Round the corners of the message box (10px radius) for a modern look
+            
+            // ================= RESET FORM =================
+            document.getElementById('newsletterForm').reset();
+            // Clear the email input field after successful submission
+            
+            // ================= AUTO-HIDE MESSAGE =================
+            setTimeout(() => {
+                // setTimeout schedules a function to run after a specified delay (in milliseconds)
+                
+                msg.style.display = 'none';
+                // Hide the success message by setting display back to 'none'
+                
+            }, 5000);
+            // Delay of 5000 milliseconds = 5 seconds. The success message will disappear automatically after 5 seconds.
+        });
+        
+        // Note: In a production environment, this script would typically send the email address to a backend server
+        // using fetch() or XMLHttpRequest to store subscribers in a database and integrate with an email marketing service.
+        
+    // ================= MOBILE MENU FUNCTIONALITY =================
+    // This script adds a hamburger menu button and makes the navigation responsive on mobile devices
+    
+    document.addEventListener('DOMContentLoaded', function() {
+        // Get the navigation element
+        const nav = document.querySelector('nav');
+        
+        // Check if hamburger button already exists (to avoid duplicates)
+        const existingToggle = document.querySelector('.menu-toggle');
+        
+        // Create hamburger button if it doesn't exist
+        if (!existingToggle && nav) {
+            // Create the hamburger button element
+            const toggleBtn = document.createElement('button');
+            toggleBtn.className = 'menu-toggle';
+            toggleBtn.setAttribute('aria-label', 'Toggle menu');
+            toggleBtn.setAttribute('aria-expanded', 'false');
+            toggleBtn.innerHTML = '<i class="bx bx-menu"></i>'; // Using Boxicons menu icon
+            
+            // Find where to insert the button (after the logo)
+            const logo = document.querySelector('.logo');
+            if (logo && logo.nextSibling) {
+                nav.insertBefore(toggleBtn, logo.nextSibling);
+            } else {
+                nav.insertBefore(toggleBtn, nav.firstChild);
+            }
+        }
+        
+        // Get the menu toggle button and navigation links
+        const menuToggle = document.querySelector('.menu-toggle');
+        const navLinks = document.querySelector('.nav-links');
+        
+        // Add click functionality if both elements exist
+        if (menuToggle && navLinks) {
+            menuToggle.addEventListener('click', function(e) {
+                e.stopPropagation();
+                
+                // Toggle the 'active' class on nav-links
+                navLinks.classList.toggle('active');
+                
+                // Update aria-expanded attribute for accessibility
+                const isExpanded = navLinks.classList.contains('active');
+                menuToggle.setAttribute('aria-expanded', isExpanded);
+                
+                // Change icon between menu and close (X)
+                const icon = menuToggle.querySelector('i');
+                if (icon) {
+                    if (navLinks.classList.contains('active')) {
+                        icon.classList.remove('bx-menu');
+                        icon.classList.add('bx-x');
+                    } else {
+                        icon.classList.remove('bx-x');
+                        icon.classList.add('bx-menu');
+                    }
+                }
+            });
+            
+            // Close the menu when a navigation link is clicked (good user experience)
+            const navLinksItems = navLinks.querySelectorAll('a');
+            navLinksItems.forEach(link => {
+                link.addEventListener('click', function() {
+                    navLinks.classList.remove('active');
+                    
+                    // Reset the menu icon back to hamburger
+                    const icon = menuToggle.querySelector('i');
+                    if (icon) {
+                        icon.classList.remove('bx-x');
+                        icon.classList.add('bx-menu');
+                    }
+                    
+                    // Update aria-expanded
+                    menuToggle.setAttribute('aria-expanded', 'false');
+                });
+            });
+        }
+        
+        // Close menu when clicking outside of it (optional but improves UX)
+        document.addEventListener('click', function(event) {
+            const menuToggle = document.querySelector('.menu-toggle');
+            const navLinks = document.querySelector('.nav-links');
+            
+            if (menuToggle && navLinks && navLinks.classList.contains('active')) {
+                // Check if click is outside both the menu toggle and the nav links
+                if (!menuToggle.contains(event.target) && !navLinks.contains(event.target)) {
+                    navLinks.classList.remove('active');
+                    
+                    // Reset the menu icon back to hamburger
+                    const icon = menuToggle.querySelector('i');
+                    if (icon) {
+                        icon.classList.remove('bx-x');
+                        icon.classList.add('bx-menu');
+                    }
+                    
+                    // Update aria-expanded
+                    menuToggle.setAttribute('aria-expanded', 'false');
+                }
+            }
+        });
+        
+        // Handle window resize - reset menu if screen becomes larger
+        window.addEventListener('resize', function() {
+            const menuToggle = document.querySelector('.menu-toggle');
+            const navLinks = document.querySelector('.nav-links');
+            
+            if (window.innerWidth > 768 && navLinks && navLinks.classList.contains('active')) {
+                navLinks.classList.remove('active');
+                
+                // Reset the menu icon
+                if (menuToggle) {
+                    const icon = menuToggle.querySelector('i');
+                    if (icon) {
+                        icon.classList.remove('bx-x');
+                        icon.classList.add('bx-menu');
+                    }
+                    menuToggle.setAttribute('aria-expanded', 'false');
+                }
+            }
+        });
+    });
+
+    </script>
+   <!-- ================= READ MORE MODAL ================= -->
+<div id="readMoreModal" style="display: none; position: fixed; top: 0; left: 0; width: 100%; height: 100%; background: rgba(0,0,0,0.85); z-index: 10010; align-items: center; justify-content: center;">
+    <div style="background: white; width: 90%; max-width: 800px; max-height: 85vh; overflow-y: auto; border-radius: 20px; animation: fadeIn 0.3s ease; position: relative;">
+        <div style="background: linear-gradient(135deg, #002a3a, #0a5c7e); color: white; padding: 20px; border-radius: 20px 20px 0 0; display: flex; justify-content: space-between; align-items: center; position: sticky; top: 0;">
+            <h3 id="modalTitle" style="margin: 0;"><i class='bx bx-news'></i> Article Details</h3>
+            <button id="closeReadMoreBtn" style="background: rgba(255,255,255,0.2); border: none; color: white; font-size: 28px; cursor: pointer; width: 40px; height: 40px; border-radius: 50%;">&times;</button>
+        </div>
+        <div id="modalContent" style="padding: 30px; line-height: 1.6; color: #333;">
+            <!-- Dynamic content will be inserted here -->
+        </div>
+        <div style="padding: 20px 30px; border-top: 1px solid #eee; text-align: right;">
+            <button id="closeModalFooterBtn" style="background: linear-gradient(135deg, #00c6ff, #0072ff); color: white; border: none; padding: 10px 25px; border-radius: 30px; cursor: pointer; font-weight: 600;">Close</button>
+        </div>
+    </div>
+</div>
+
+<style>
+@keyframes fadeIn {
+    from { opacity: 0; transform: translateY(-30px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+</style>
+
+<script>
+// ==================== BLOG READ MORE FUNCTIONALITY - ALL 6 ARTICLES ====================
+document.addEventListener('DOMContentLoaded', function() {
+    const modal = document.getElementById('readMoreModal');
+    const modalTitle = document.getElementById('modalTitle');
+    const modalContent = document.getElementById('modalContent');
+    const closeBtn = document.getElementById('closeReadMoreBtn');
+    const closeFooterBtn = document.getElementById('closeModalFooterBtn');
+    
+    // ALL 6 ARTICLES with detailed content and images
+    const blogArticlesData = {
+        // ARTICLE 1
+        "Top Web Design Trends 2026": {
+            fullTitle: "🎨 Top Web Design Trends 2026",
+            image: "images/blog/web.jpg",
+            content: `
+                <div style="margin-bottom: 25px;">
+                    <img src="images/blog/web.jpg" alt="Web Design Trends" style="width: 100%; border-radius: 15px; box-shadow: 0 4px 15px rgba(0,0,0,0.1);">
+                </div>
+                <div style="margin-bottom: 20px; padding: 10px; background: #f0f7ff; border-radius: 10px;">
+                    <span style="color: #0072ff;">📅 Published: January 14, 2026</span> | 
+                    <span style="color: #0072ff;">⏱️ 5 min read</span> |
+                    <span style="color: #0072ff;">👁️ 2.5k views</span>
+                </div>
+                
+                <h2 style="color: #002a3a;">The Future of Web Design is Here</h2>
+                <p>As we dive deeper into 2026, web design continues to evolve at an unprecedented pace. From AI-powered interfaces that adapt to user behavior in real-time, to immersive 3D elements that create unforgettable experiences, the landscape is more exciting than ever.</p>
+                
+                <h3 style="color: #002a3a; margin-top: 25px;">🚀 1. AI-Generated Layouts</h3>
+                <p>Artificial intelligence is now capable of generating entire website layouts based on your brand guidelines and content. Tools like Midjourney and DALL-E integration allow designers to create unique assets in seconds. This saves time and opens up creative possibilities that were previously impossible.</p>
+                
+                <h3 style="color: #002a3a; margin-top: 25px;">✨ 2. Neumorphism 2.0</h3>
+                <p>The soft UI trend is back with improved accessibility standards. Neumorphism now combines with subtle shadows and better contrast ratios to create beautiful yet functional interfaces. Designers are finding the perfect balance between aesthetics and usability.</p>
+                
+                <h3 style="color: #002a3a; margin-top: 25px;">🌙 3. Dark Mode Everything</h3>
+                <p>Dark mode is no longer optional. Modern websites now offer seamless dark/light mode switching with smooth transitions and optimized color palettes for eye comfort. Studies show dark mode reduces eye strain and saves battery life on OLED screens.</p>
+                
+                <div style="background: linear-gradient(135deg, #e8f4fd, #d4eaf7); padding: 20px; border-radius: 15px; margin-top: 25px;">
+                    <strong><i class='bx bx-bulb' style="color: #0072ff;"></i> Pro Tip:</strong>
+                    <p style="margin-top: 10px;">Start implementing these trends gradually. Focus on accessibility and performance first, then add visual enhancements. Test with real users to ensure your design choices improve the experience.</p>
+                </div>
+            `
+        },
+        
+        // ARTICLE 2
+        "Cybersecurity Basics for Beginners": {
+            fullTitle: "🔒 Cybersecurity Basics for Beginners",
+            image: "images/blog/cybersecurity.jpg",
+            content: `
+                <div style="margin-bottom: 25px;">
+                    <img src="images/blog/cybersecurity.jpg" alt="Cybersecurity" style="width: 100%; border-radius: 15px; box-shadow: 0 4px 15px rgba(0,0,0,0.1);">
+                </div>
+                <div style="margin-bottom: 20px; padding: 10px; background: #f0f7ff; border-radius: 10px;">
+                    <span style="color: #0072ff;">📅 Published: January 12, 2026</span> | 
+                    <span style="color: #0072ff;">⏱️ 7 min read</span> |
+                    <span style="color: #0072ff;">👁️ 3.2k views</span>
+                </div>
+                
+                <h2 style="color: #002a3a;">Protect Yourself Online: Essential Security Tips</h2>
+                <p>In today's digital age, cybersecurity is everyone's responsibility. Whether you're a business owner or an individual, these fundamental practices will keep you safe from online threats.</p>
+                
+                <h3 style="color: #002a3a; margin-top: 25px;">🔐 1. Create Strong Passwords</h3>
+                <p>Use passwords that are at least 12 characters long, combining uppercase letters, lowercase letters, numbers, and special symbols. Avoid using personal information like birthdays or names. Consider using passphrases - random words strung together (e.g., "PurpleElephantDancing!42").</p>
+                
+                <h3 style="color: #002a3a; margin-top: 25px;">📱 2. Enable Two-Factor Authentication (2FA)</h3>
+                <p>2FA adds an extra layer of security by requiring a second verification step, such as a code sent to your phone or generated by an authenticator app. This means even if someone steals your password, they still can't access your account.</p>
+                
+                <h3 style="color: #002a3a; margin-top: 25px;">🎣 3. Recognize Phishing Attempts</h3>
+                <p>Be wary of suspicious emails, messages, or calls asking for personal information. Check sender addresses, look for spelling errors, and never click on unknown links. When in doubt, contact the company directly using official channels.</p>
+                
+                <div style="background: #e8f4fd; padding: 20px; border-radius: 15px; margin-top: 25px;">
+                    <strong><i class='bx bx-shield-alt' style="color: #0072ff;"></i> Security Alert:</strong>
+                    <p style="margin-top: 10px;">According to recent reports, 81% of data breaches are caused by weak or stolen passwords. Don't become a statistic! Take action today to secure your digital life.</p>
+                </div>
+            `
+        },
+        
+        // ARTICLE 3
+        "Why Your Business Needs a Website": {
+            fullTitle: "💼 Why Your Business Needs a Website",
+            image: "images/blog/business.jpg",
+            content: `
+                <div style="margin-bottom: 25px;">
+                    <img src="images/blog/business.jpg" alt="Business Website" style="width: 100%; border-radius: 15px; box-shadow: 0 4px 15px rgba(0,0,0,0.1);">
+                </div>
+                <div style="margin-bottom: 20px; padding: 10px; background: #f0f7ff; border-radius: 10px;">
+                    <span style="color: #0072ff;">📅 Published: January 10, 2026</span> | 
+                    <span style="color: #0072ff;">⏱️ 6 min read</span> |
+                    <span style="color: #0072ff;">👁️ 4.1k views</span>
+                </div>
+                
+                <h2 style="color: #002a3a;">10 Reasons Your Business Can't Afford to Be Offline</h2>
+                <p>In 2026, having a professional website isn't optional—it's essential. Here's why every business, regardless of size or industry, needs a strong online presence.</p>
+                
+                <h3 style="color: #002a3a; margin-top: 25px;">🕐 1. 24/7 Availability</h3>
+                <p>Your website works around the clock, taking orders, answering questions, and generating leads even when you're sleeping. This means you never miss an opportunity, regardless of time zones or holidays.</p>
+                
+                <h3 style="color: #002a3a; margin-top: 25px;">⭐ 2. Builds Credibility</h3>
+                <p>85% of consumers trust businesses with professional websites. A poorly designed or missing website makes you look unprofessional and may drive potential customers to your competitors.</p>
+                
+                <h3 style="color: #002a3a; margin-top: 25px;">🌍 3. Reaches More Customers</h3>
+                <p>Your physical location limits you. The internet gives you access to customers anywhere in the world. Expand your market beyond local boundaries and tap into global opportunities.</p>
+                
+                <div style="background: linear-gradient(135deg, #e8f4fd, #d4eaf7); padding: 20px; border-radius: 15px; margin-top: 25px;">
+                    <strong><i class='bx bx-stats' style="color: #0072ff;"></i> Business Fact:</strong>
+                    <p style="margin-top: 10px;">Businesses with professional websites grow 2-3x faster than those without. Don't let your competitors get ahead - invest in your online presence today!</p>
+                </div>
+            `
+        },
+        
+        // ARTICLE 4 - AI in Cybersecurity
+        "AI in Cybersecurity": {
+            fullTitle: "🤖 AI in Cybersecurity",
+            image: "images/blog/ai_and_cybersecurity.png",
+            content: `
+                <div style="margin-bottom: 25px;">
+                    <img src="images/blog/ai_and_cybersecurity.png" alt="AI in Cybersecurity" style="width: 100%; border-radius: 15px; box-shadow: 0 4px 15px rgba(0,0,0,0.1);">
+                </div>
+                <div style="margin-bottom: 20px; padding: 10px; background: #f0f7ff; border-radius: 10px;">
+                    <span style="color: #0072ff;">📅 Published: January 8, 2026</span> | 
+                    <span style="color: #0072ff;">⏱️ 8 min read</span> |
+                    <span style="color: #0072ff;">👁️ 2.8k views</span>
+                </div>
+                
+                <h2 style="color: #002a3a;">How Artificial Intelligence is Revolutionizing Security</h2>
+                <p>Artificial intelligence is transforming how we detect, prevent, and respond to cyber threats. From real-time threat detection to predictive analytics, AI-powered security systems are changing the game for businesses worldwide.</p>
+                
+                <h3 style="color: #002a3a; margin-top: 25px;">⚡ 1. Real-Time Threat Detection</h3>
+                <p>AI algorithms analyze network traffic patterns instantly, identifying anomalies that could indicate a security breach before damage occurs. Machine learning models can process millions of data points per second, detecting threats that humans might miss.</p>
+                
+                <h3 style="color: #002a3a; margin-top: 25px;">📊 2. Predictive Analytics</h3>
+                <p>Machine learning models predict potential vulnerabilities and attack vectors based on historical data and emerging threat intelligence. This proactive approach allows organizations to patch vulnerabilities before they can be exploited.</p>
+                
+                <h3 style="color: #002a3a; margin-top: 25px;">🤖 3. Automated Incident Response</h3>
+                <p>AI can automatically isolate infected systems, block malicious IP addresses, and deploy countermeasures without human intervention. This reduces response time from hours to seconds, minimizing potential damage.</p>
+                
+                <div style="background: #e8f4fd; padding: 20px; border-radius: 15px; margin-top: 25px;">
+                    <strong><i class='bx bx-trending-up' style="color: #0072ff;"></i> Market Insight:</strong>
+                    <p style="margin-top: 10px;">The AI cybersecurity market is expected to reach $135 billion by 2030, growing at 23% annually. Companies investing in AI security now will have a significant competitive advantage.</p>
+                </div>
+            `
+        },
+        
+        // ARTICLE 5 - Cloud Security Trends 2026
+        "Cloud Security Trends 2026": {
+            fullTitle: "☁️ Cloud Security Trends 2026",
+            image: "images/blog/cloudsecurity.jpg",
+            content: `
+                <div style="margin-bottom: 25px;">
+                    <img src="images/blog/cloudsecurity.jpg" alt="Cloud Security Trends" style="width: 100%; border-radius: 15px; box-shadow: 0 4px 15px rgba(0,0,0,0.1);">
+                </div>
+                <div style="margin-bottom: 20px; padding: 10px; background: #f0f7ff; border-radius: 10px;">
+                    <span style="color: #0072ff;">📅 Published: January 6, 2026</span> | 
+                    <span style="color: #0072ff;">⏱️ 7 min read</span> |
+                    <span style="color: #0072ff;">👁️ 1.9k views</span>
+                </div>
+                
+                <h2 style="color: #002a3a;">Securing Your Cloud Infrastructure in 2026</h2>
+                <p>As more businesses migrate to the cloud, security concerns continue to evolve. Here are the top cloud security trends you need to know to protect your organization in 2026.</p>
+                
+                <h3 style="color: #002a3a; margin-top: 25px;">🔒 1. Zero-Trust Architecture</h3>
+                <p>Never trust, always verify. Zero-trust assumes no user or device is safe by default, requiring continuous authentication and authorization. This approach has become the gold standard for cloud security.</p>
+                
+                <h3 style="color: #002a3a; margin-top: 25px;">☁️ 2. Multi-Cloud Security</h3>
+                <p>Organizations are increasingly using multiple cloud providers. Unified security platforms now manage policies across AWS, Azure, and Google Cloud simultaneously, ensuring consistent protection regardless of where data lives.</p>
+                
+                <h3 style="color: #002a3a; margin-top: 25px;">📋 3. Compliance Automation</h3>
+                <p>Automated compliance tools continuously monitor cloud environments for regulatory violations (GDPR, POPIA, HIPAA, etc.). These tools generate reports automatically and alert teams to potential compliance issues in real-time.</p>
+                
+                <div style="background: linear-gradient(135deg, #e8f4fd, #d4eaf7); padding: 20px; border-radius: 15px; margin-top: 25px;">
+                    <strong><i class='bx bx-cloud' style="color: #0072ff;"></i> Cloud Adoption:</strong>
+                    <p style="margin-top: 10px;">By 2026, 75% of organizations will have adopted a cloud-first strategy. Is your security strategy keeping pace? Start implementing zero-trust today.</p>
+                </div>
+            `
+        },
+        
+        // ARTICLE 6 - Data Privacy Regulations
+        "Data Privacy Regulations": {
+            fullTitle: "📜 Data Privacy Regulations",
+            image: "images/blog/act.jpg",
+            content: `
+                <div style="margin-bottom: 25px;">
+                    <img src="images/blog/act.jpg" alt="Data Privacy Regulations" style="width: 100%; border-radius: 15px; box-shadow: 0 4px 15px rgba(0,0,0,0.1);">
+                </div>
+                <div style="margin-bottom: 20px; padding: 10px; background: #f0f7ff; border-radius: 10px;">
+                    <span style="color: #0072ff;">📅 Published: January 3, 2026</span> | 
+                    <span style="color: #0072ff;">⏱️ 9 min read</span> |
+                    <span style="color: #0072ff;">👁️ 3.5k views</span>
+                </div>
+                
+                <h2 style="color: #002a3a;">Staying Compliant with Global Privacy Laws</h2>
+                <p>Data protection regulations are becoming stricter worldwide. Non-compliance can result in massive fines and reputational damage. Here's what you need to know about major privacy laws.</p>
+                
+                <h3 style="color: #002a3a; margin-top: 25px;">🇿🇦 1. POPIA (South Africa)</h3>
+                <p>The Protection of Personal Information Act regulates how South African businesses collect, store, and process personal data. Non-compliance can result in fines up to R10 million and even imprisonment for serious violations.</p>
+                
+                <h3 style="color: #002a3a; margin-top: 25px;">🇪🇺 2. GDPR (Europe)</h3>
+                <p>The General Data Protection Regulation applies to any business handling EU citizen data, regardless of where the business is located. Fines can reach €20 million or 4% of global revenue - whichever is higher.</p>
+                
+                <h3 style="color: #002a3a; margin-top: 25px;">🇺🇸 3. CCPA (California)</h3>
+                <p>The California Consumer Privacy Act gives residents the right to know what data is collected about them, request deletion of their data, and opt out of data sharing. Similar laws are emerging across multiple US states.</p>
+                
+                <h3 style="color: #002a3a; margin-top: 25px;">✅ Best Practices for Compliance:</h3>
+                <ul style="margin-left: 20px; margin-top: 10px;">
+                    <li>Conduct regular data audits to understand what data you collect</li>
+                    <li>Implement clear, accessible privacy policies on your website</li>
+                    <li>Obtain explicit consent before collecting personal data</li>
+                    <li>Provide mechanisms for users to access and delete their data</li>
+                    <li>Train all employees on data protection best practices</li>
+                    <li>Document your compliance efforts for regulatory review</li>
+                </ul>
+                
+                <div style="background: #e8f4fd; padding: 20px; border-radius: 15px; margin-top: 25px;">
+                    <strong><i class='bx bx-gavel' style="color: #0072ff;"></i> Legal Warning:</strong>
+                    <p style="margin-top: 10px;">Ignoring privacy regulations can destroy customer trust and lead to devastating financial penalties. The average cost of a data breach is now $4.45 million. Act now to protect your business and your customers.</p>
+                </div>
+            `
+        }
+    };
+    
+    function openModal(articleTitle, articleData) {
+        modalTitle.innerHTML = `<i class='bx bx-news'></i> ${articleData.fullTitle}`;
+        modalContent.innerHTML = articleData.content;
+        modal.style.display = 'flex';
+        document.body.style.overflow = 'hidden';
+    }
+    
+    function closeModal() {
+        modal.style.display = 'none';
+        document.body.style.overflow = 'auto';
+    }
+    
+    // Close modal events
+    if (closeBtn) closeBtn.addEventListener('click', closeModal);
+    if (closeFooterBtn) closeFooterBtn.addEventListener('click', closeModal);
+    
+    // Close when clicking outside
+    modal.addEventListener('click', function(e) {
+        if (e.target === modal) {
+            closeModal();
+        }
+    });
+    
+    // Get all Read More buttons from the articles section
+    const readMoreButtons = document.querySelectorAll('.cards .card .btn');
+    
+    if (readMoreButtons.length > 0) {
+        readMoreButtons.forEach((button) => {
+            const newButton = button.cloneNode(true);
+            button.parentNode.replaceChild(newButton, button);
+            
+            newButton.addEventListener('click', function(e) {
+                e.preventDefault();
+                
+                const card = this.closest('.card');
+                const titleElement = card.querySelector('h3');
+                let articleTitle = '';
+                
+                if (titleElement) {
+                    // Clean title by removing emojis
+                    articleTitle = titleElement.textContent.replace(/[🎨🔒💼🤖☁️📜🛡️]/g, '').trim();
+                }
+                
+                // Find matching article
+                let matchedArticle = null;
+                for (const [key, value] of Object.entries(blogArticlesData)) {
+                    if (articleTitle.includes(key) || key.includes(articleTitle)) {
+                        matchedArticle = value;
+                        break;
+                    }
+                }
+                
+                if (matchedArticle) {
+                    openModal(articleTitle, matchedArticle);
+                } else if (articleTitle) {
+                    // Fallback for any unmatched articles
+                    openModal(articleTitle, {
+                        fullTitle: titleElement ? titleElement.textContent : articleTitle,
+                        content: `
+                            <div style="text-align: center; padding: 20px;">
+                                <i class='bx bx-info-circle' style="font-size: 64px; color: #0072ff;"></i>
+                                <h2 style="color: #002a3a; margin-top: 20px;">${articleTitle}</h2>
+                                <p style="color: #666;">Full article content coming soon! Check back for updates.</p>
+                            </div>
+                        `
+                    });
+                }
+            });
+        });
+    }
+});
+</script>
+    <script src="js/script.js"></script>
+
+
+</body>
+</html>
