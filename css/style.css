@@ -1451,3 +1451,30 @@ html {
         font-size: 16px !important;
     }
 }
+
+/* ================= SEARCH FEATURE STYLES ================= */
+.search-container input:focus {
+    border-color: #0072ff;
+    outline: none;
+    box-shadow: 0 0 0 3px rgba(0,114,255,0.1);
+}
+
+.search-highlight {
+    background: #ffeb3b;
+    padding: 0 2px;
+    border-radius: 3px;
+}
+
+.no-results {
+    text-align: center;
+    padding: 40px;
+    color: #888;
+}
+
+.search-result-count {
+    background: #0072ff;
+    color: white;
+    padding: 2px 10px;
+    border-radius: 20px;
+    font-size: 12px;
+}
