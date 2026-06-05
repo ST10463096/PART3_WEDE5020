@@ -86,7 +86,18 @@
             <!-- Call-to-action button that directs users to the Services page to learn more about offerings -->
         </div>
     </section>
-
+<!-- Search Bar Section -->
+<div class="search-section" style="max-width: 600px; margin: 20px auto; padding: 0 20px;">
+    <div class="search-container" style="position: relative;">
+        <i class='bx bx-search' style="position: absolute; left: 15px; top: 50%; transform: translateY(-50%); font-size: 20px; color: #999;"></i>
+        <input type="text" id="liveSearch" placeholder="Search services, blog posts, or jobs..." 
+               style="width: 100%; padding: 14px 20px 14px 45px; border: 2px solid #e0e6ed; border-radius: 50px; font-size: 16px; transition: all 0.3s;">
+        <button id="clearSearch" style="position: absolute; right: 15px; top: 50%; transform: translateY(-50%); background: none; border: none; cursor: pointer; display: none;">
+            <i class='bx bx-x' style="font-size: 20px; color: #999;"></i>
+        </button>
+    </div>
+    <div id="searchResults" style="margin-top: 10px; font-size: 14px; color: #666; text-align: center;"></div>
+</div>
     <!-- ================= SIDEBAR ================= -->
     <!-- Sidebar navigation panel - typically positioned on the left or right side of the page containing additional navigation links and social media shortcuts -->
     <aside>
