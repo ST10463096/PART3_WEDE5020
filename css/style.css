@@ -624,9 +624,19 @@ html {
 
 /* ========================= RESPONSIVE DESIGN ========================= */
 @media (max-width: 1200px) {
+    /* Don't hide the sidebar, just make it smaller */
     aside {
-        display: none;
+        width: 220px;
+        left: 10px;
+        top: 100px;
+        padding: 15px;
     }
+    
+    /* Adjust body margin to match smaller sidebar */
+    body {
+        margin-left: 240px;
+    }
+    
     nav {
         padding: 15px 30px;
     }
@@ -1389,4 +1399,55 @@ html {
 /* Ensure card has proper overflow handling - THIS IS THE CRITICAL FIX */
 .card {
     overflow: visible !important;
+}
+/* ===== MOBILE SIDEBAR - ALWAYS VISIBLE ===== */
+@media (max-width: 768px) {
+    /* Override the desktop fixed positioning */
+    aside {
+        position: relative !important;
+        top: 0 !important;
+        left: 0 !important;
+        width: 100% !important;
+        background: linear-gradient(135deg, #0a1922, #0e2a38) !important;
+        border-radius: 0 !important;
+        margin: 0 !important;
+        padding: 12px 15px !important;
+        display: block !important;  /* Force it to show */
+    }
+    
+    /* Remove body margin on mobile */
+    body {
+        margin-left: 0 !important;
+    }
+    
+    /* Hide the sidebar heading on mobile */
+    aside h1 {
+        display: none !important;
+    }
+    
+    /* Make sidebar links horizontal */
+    aside ul {
+        display: flex !important;
+        flex-wrap: wrap !important;
+        justify-content: center !important;
+        gap: 8px !important;
+        margin: 0 !important;
+        padding: 0 !important;
+    }
+    
+    aside li {
+        margin: 0 !important;
+    }
+    
+    aside a {
+        padding: 8px 14px !important;
+        font-size: 13px !important;
+        background: rgba(255,255,255,0.1) !important;
+        border-radius: 30px !important;
+        white-space: nowrap !important;
+    }
+    
+    aside a i {
+        font-size: 16px !important;
+    }
 }
