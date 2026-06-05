@@ -2018,3 +2018,177 @@ document.addEventListener('DOMContentLoaded', function() {
         });
     });
 });
+// ================= LIVE SEARCH FEATURE =================
+document.addEventListener('DOMContentLoaded', function() {
+    const searchInput = document.getElementById('liveSearch');
+    const clearBtn = document.getElementById('clearSearch');
+    const searchResultsDiv = document.getElementById('searchResults');
+    
+    if (!searchInput) return;
+    
+    // Data to search through (services, blog posts, jobs)
+    const searchableData = {
+        services: [
+            { name: "Web Development", category: "Service", description: "Modern responsive websites built with latest technologies", url: "services.html" },
+            { name: "IT Support", category: "Service", description: "24/7 professional IT assistance and troubleshooting", url: "services.html" },
+            { name: "Network Solutions", category: "Service", description: "Secure and reliable networking for business infrastructure", url: "services.html" },
+            { name: "Cybersecurity", category: "Service", description: "Protect your business from cyber threats", url: "services.html" },
+            { name: "Cloud Services", category: "Service", description: "Scalable cloud solutions for your business", url: "services.html" }
+        ],
+        jobs: [
+            { name: "Web Developer", category: "Career", description: "Looking for experienced frontend/backend developer", url: "careers.html" },
+            { name: "IT Support Specialist", category: "Career", description: "Join our support team to help clients", url: "careers.html" },
+            { name: "Network Engineer", category: "Career", description: "Manage and maintain client networks", url: "careers.html" },
+            { name: "Security Analyst", category: "Career", description: "Cybersecurity expert needed", url: "careers.html" }
+        ],
+        pages: [
+            { name: "Home", category: "Page", description: "Welcome to Nass Tech Solution", url: "index.html" },
+            { name: "About Us", category: "Page", description: "Learn about our company", url: "about_us.html" },
+            { name: "Contact", category: "Page", description: "Get in touch with us", url: "contact_us.html" },
+            { name: "Blog", category: "Page", description: "Latest tech news and updates", url: "blog.html" }
+        ]
+    };
+    
+    const allItems = [...searchableData.services, ...searchableData.jobs, ...searchableData.pages];
+    
+    function performSearch(query) {
+        if (!query || query.length < 2) {
+            if (searchResultsDiv) searchResultsDiv.innerHTML = '';
+            // Show all cards again
+            showAllCards();
+            return [];
+        }
+        
+        const lowerQuery = query.toLowerCase();
+        const results = allItems.filter(item => 
+            item.name.toLowerCase().includes(lowerQuery) || 
+            item.description.toLowerCase().includes(lowerQuery)
+        );
+        
+        displayResults(results, query);
+        filterCards(results, query);
+        return results;
+    }
+    
+    function displayResults(results, query) {
+        if (!searchResultsDiv) return;
+        
+        if (results.length === 0) {
+            searchResultsDiv.innerHTML = `<span class="search-result-count">🔍 No results found for "${query}"</span>`;
+        } else {
+            searchResultsDiv.innerHTML = `<span class="search-result-count">🔍 Found ${results.length} result(s) for "${query}"</span>`;
+        }
+        
+        setTimeout(() => {
+            if (searchResultsDiv.innerHTML) {
+                setTimeout(() => {
+                    if (searchInput.value.length < 2) {
+                        searchResultsDiv.innerHTML = '';
+                    }
+                }, 3000);
+            }
+        }, 3000);
+    }
+    
+    function filterCards(results, query) {
+        const cards = document.querySelectorAll('.card');
+        if (cards.length === 0) return;
+        
+        let visibleCount = 0;
+        const lowerQuery = query.toLowerCase();
+        
+        cards.forEach(card => {
+            const title = card.querySelector('h3')?.textContent.toLowerCase() || '';
+            const description = card.querySelector('p')?.textContent.toLowerCase() || '';
+            
+            if (title.includes(lowerQuery) || description.includes(lowerQuery)) {
+                card.style.display = 'block';
+                visibleCount++;
+                highlightText(card, query);
+            } else {
+                card.style.display = 'none';
+            }
+        });
+        
+        // Show message if no cards match
+        const cardsContainer = document.querySelector('.cards');
+        let noResultsMsg = document.querySelector('.no-results-message');
+        
+        if (visibleCount === 0 && cards.length > 0 && query.length >= 2) {
+            if (!noResultsMsg) {
+                noResultsMsg = document.createElement('div');
+                noResultsMsg.className = 'no-results-message';
+                noResultsMsg.style.cssText = 'text-align: center; padding: 40px; color: #888; width: 100%;';
+                noResultsMsg.innerHTML = `
+                    <i class='bx bx-search-alt' style="font-size: 48px; color: #ccc; margin-bottom: 15px; display: block;"></i>
+                    <h4>No matching services found</h4>
+                    <p>Try searching for "web", "support", "network", or "security"</p>
+                `;
+                if (cardsContainer) cardsContainer.appendChild(noResultsMsg);
+            }
+        } else if (noResultsMsg) {
+            noResultsMsg.remove();
+        }
+    }
+    
+    function showAllCards() {
+        const cards = document.querySelectorAll('.card');
+        cards.forEach(card => {
+            card.style.display = 'block';
+            removeHighlights(card);
+        });
+        
+        const noResultsMsg = document.querySelector('.no-results-message');
+        if (noResultsMsg) noResultsMsg.remove();
+    }
+    
+    function highlightText(card, query) {
+        removeHighlights(card);
+        
+        const titleElem = card.querySelector('h3');
+        const descElem = card.querySelector('p');
+        const regex = new RegExp(`(${query})`, 'gi');
+        
+        if (titleElem && titleElem.textContent) {
+            titleElem.innerHTML = titleElem.textContent.replace(regex, '<span class="search-highlight">$1</span>');
+        }
+        
+        if (descElem && descElem.textContent) {
+            descElem.innerHTML = descElem.textContent.replace(regex, '<span class="search-highlight">$1</span>');
+        }
+    }
+    
+    function removeHighlights(card) {
+        const titleElem = card.querySelector('h3');
+        const descElem = card.querySelector('p');
+        
+        if (titleElem && titleElem.innerHTML) {
+            titleElem.innerHTML = titleElem.textContent;
+        }
+        if (descElem && descElem.innerHTML) {
+            descElem.innerHTML = descElem.textContent;
+        }
+    }
+    
+    // Debounce search for better performance
+    let debounceTimer;
+    searchInput.addEventListener('input', function(e) {
+        clearTimeout(debounceTimer);
+        debounceTimer = setTimeout(() => {
+            const query = e.target.value.trim();
+            if (clearBtn) {
+                clearBtn.style.display = query.length > 0 ? 'block' : 'none';
+            }
+            performSearch(query);
+        }, 300);
+    });
+    
+    if (clearBtn) {
+        clearBtn.addEventListener('click', function() {
+            searchInput.value = '';
+            clearBtn.style.display = 'none';
+            performSearch('');
+            searchInput.focus();
+        });
+    }
+});
