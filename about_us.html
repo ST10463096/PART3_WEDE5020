@@ -1,0 +1,425 @@
+<!DOCTYPE html>
+<!-- Declares the document type and version as HTML5 for proper browser rendering and standards compliance -->
+<html lang="en">
+<!-- Root element of the HTML document. The 'lang' attribute sets the primary language to English for accessibility (screen readers) and SEO -->
+
+<head>
+    <!-- Contains meta-information about the document that is not displayed on the page itself -->
+    
+    <meta charset="UTF-8">
+    <!-- Specifies the character encoding for the document as UTF-8, which supports almost all international characters, symbols, and emojis -->
+    
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Ensures proper responsive behavior on mobile devices by setting the viewport width equal to the device's width and initial zoom scale to 1.0 -->
+     <meta name="description" content="Nass Tech Solution provides innovative IT services including web development, software solutions, IT support, and digital transformation. Meet our expert team driving business success in a digital-first world.">
+     <meta name="keywords" content="IT services, web development, software solutions, IT support, digital transformation, technology consulting, Nass Tech Solution, our team, IT experts, software engineers">
+    
+    <title>About | Nass Tech - Our Team</title>
+    <!-- Sets the title of the web page, which appears on the browser tab and in search engine results -->
+    
+    <link rel="stylesheet" href="css/style.css">
+    <!-- Links an external CSS stylesheet (located at css/style.css) to control the visual styling and layout of the page -->
+    
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <!-- Imports the Boxicons icon library from a CDN (Content Delivery Network), providing a wide range of scalable vector icons for use throughout the page -->
+    
+    <link rel="icon" href="images/logo/logo.png">
+    <!-- Sets the favicon (small icon displayed in the browser tab) to the company logo image -->
+</head>
+
+<body>
+    <!-- Contains all visible content of the web page that users interact with -->
+
+    <!-- ================= NAVIGATION BAR ================= -->
+    <!-- Creates the primary navigation menu at the top of the page for site-wide navigation -->
+    <nav>
+        <!-- Semantic HTML5 element specifically for navigation sections -->
+        
+        <div class="logo">
+            <!-- Container for the company logo -->
+            <img src="images/logo/logo.png" alt="Nass Tech Solutions" class="logo">
+            <!-- Displays the company logo image. The 'alt' attribute provides alternative text for screen readers and when images fail to load -->
+        </div>
+        
+        <ul class="nav-links">
+            <!-- Unordered list holding all primary navigation links -->
+            <li><a href="index.html">Home</a></li>
+            <!-- Link to the Home page -->
+            <li><a href="about_us.html" class="active">About</a></li>
+            <!-- Link to the About Us page. The 'active' class highlights the current page in the navigation menu -->
+            <li><a href="services.html">Services</a></li>
+            <!-- Link to the Services page -->
+            <li><a href="careers.html">Careers</a></li>
+            <!-- Link to the Careers/Jobs page -->
+            <li><a href="client-portal.html">Client Portal</a></li>
+            <!-- Link to the Client Portal (login-protected area for existing clients) -->
+            <li><a href="enquiries.html">Enquiry</a></li>
+            <!-- Link to the Enquiry page -->
+            <li><a href="contact_us.html">Contact</a></li>
+            <!-- Link to the Contact Us page -->
+            <li><a href="blog.html">Blog</a></li>
+            <!-- Link to the company Blog page -->
+        </ul>
+        
+        <div class="nav-buttons">
+            <!-- Container for authentication/account action buttons -->
+            <a href="#" class="btn">Sign In</a>
+            <!-- Sign In button (placeholder link). Allows existing users to log into their account -->
+            <a href="#" class="btn logout">Sign Out</a>
+            <!-- Sign Out button with additional 'logout' class for specific styling -->
+        </div>
+    </nav>
+
+    <!-- ================= HERO SECTION ================= -->
+    <!-- Large promotional banner area at the top of the page to grab user attention and introduce the about page content -->
+    <section class="hero" style="background: linear-gradient(135deg, rgba(0,42,58,0.85), rgba(0,114,255,0.75)), url('images/hero/aboutb.jpg'); background-size:cover; background-position: center;">
+        <!-- Inline style creates a dark gradient overlay over a background image. The overlay improves text readability -->
+        
+        <div class="hero-content">
+            <!-- Container for the hero text content -->
+            <h1>About Nass Tech Solution</h1>
+            <!-- Main heading of the hero section - clearly states this is the about page -->
+            <p>Delivering innovative IT solutions that drive business success.</p>
+            <!-- Supporting subheading describing the company's value proposition -->
+        </div>
+    </section>
+
+    <!-- ================= WHO WE ARE SECTION ================= -->
+    <!-- Introduces the company's identity and core business focus -->
+    <section class="section">
+        <h2>Who We Are</h2>
+        <!-- Section heading asking/answering the company's identity -->
+        
+        <p style="text-align:center; max-width:800px; margin:auto;">
+            Nass Tech Solution is a modern IT company specializing in web development,
+            software solutions, IT support, and digital transformation. We partner with
+            businesses of all sizes to implement technology solutions that drive growth,
+            efficiency, and innovation.
+        </p>
+    </section>
+
+    <!-- ================= OUR MISSION SECTION ================= -->
+    <section class="section">
+        <h2>Our Mission</h2>
+        <p style="text-align:center; max-width:800px; margin:auto;">
+            To provide reliable, innovative, and cost-effective IT solutions that empower
+            businesses to achieve their goals and succeed in a digital-first world.
+        </p>
+    </section>
+
+    <!-- ================= OUR VISION SECTION ================= -->
+    <section class="section">
+        <h2>Our Vision</h2>
+        <p style="text-align:center; max-width:800px; margin:auto;">
+            To be a leading IT solutions provider recognized for excellence, innovation,
+            and outstanding customer service.
+        </p>
+    </section>
+
+    <!-- ================= OUR CORE VALUES SECTION ================= -->
+    <section class="section">
+        <h2>Our Core Values</h2>
+        <div class="cards">
+            <div class="card">
+                <h3>Innovation</h3>
+                <p>We embrace emerging technologies and creative ideas to deliver cutting-edge solutions.</p>
+            </div>
+            <div class="card">
+                <h3>Integrity</h3>
+                <p>We build trust with our clients through honesty, transparency, and ethical practices.</p>
+            </div>
+            <div class="card">
+                <h3>Excellence</h3>
+                <p>We strive to exceed expectations by delivering high-quality results.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- ================= PROFESSIONAL TEAM SECTION ================= -->
+    <!-- Meet Our Leadership Team section with rectangular images (no circles) and always-visible social icons -->
+    <section class="section team-section" style="background: linear-gradient(135deg, #f8fafc 0%, #ffffff 100%);">
+        <h2>Meet Our Leadership Team</h2>
+        <div class="team-intro" style="text-align: center; max-width: 750px; margin: 0 auto 3rem auto; color: #334155; font-size: 1.1rem;">
+            <p>Behind every successful project is a team of dedicated experts. Get to know the brilliant minds driving innovation, strategy, and technical excellence at Nass Tech Solution.</p>
+        </div>
+        
+        <div class="team-grid" style="display: grid; grid-template-columns: repeat(auto-fit, minmax(320px, 1fr)); gap: 2.5rem; margin: 2rem 0;">
+            <!-- Team Member 1 - CEO & Founder (Rectangular Image, No Circle, Icons always visible) -->
+            <div class="team-card" style="background: #ffffff; border-radius: 1.5rem; overflow: hidden; box-shadow: 0 15px 35px -12px rgba(0, 0, 0, 0.08); transition: all 0.35s ease; text-align: center; border: 1px solid rgba(0, 114, 255, 0.08);">
+                <div class="team-img-wrapper" style="position: relative; background: linear-gradient(145deg, #eef2ff, #e0e7ff); overflow: hidden;">
+                    <img src="images/team/ceo.jpeg" alt="Hlalelani Noredn - CEO" style="width: 100%; aspect-ratio: 1 / 1; object-fit: cover; display: block;">
+                    <!-- Social Icons - Always visible (no hover needed) -->
+                    <div class="team-social" style="position: absolute; bottom: 15px; left: 0; right: 0; display: flex; justify-content: center; gap: 0.75rem; opacity: 1; transform: translateY(0); transition: all 0.3s ease;">
+                        <a href="#" class="social-icon" style="background: white; width: 34px; height: 34px; border-radius: 50%; display: inline-flex; align-items: center; justify-content: center; color: #0072ff; font-size: 1.2rem; box-shadow: 0 4px 8px rgba(0,0,0,0.1); text-decoration: none;"><i class='bx bxl-linkedin'></i></a>
+                        <a href="#" class="social-icon" style="background: white; width: 34px; height: 34px; border-radius: 50%; display: inline-flex; align-items: center; justify-content: center; color: #0072ff; font-size: 1.2rem; box-shadow: 0 4px 8px rgba(0,0,0,0.1); text-decoration: none;"><i class='bx bxl-twitter'></i></a>
+                        <a href="#" class="social-icon" style="background: white; width: 34px; height: 34px; border-radius: 50%; display: inline-flex; align-items: center; justify-content: center; color: #0072ff; font-size: 1.2rem; box-shadow: 0 4px 8px rgba(0,0,0,0.1); text-decoration: none;"><i class='bx bx-envelope'></i></a>
+                    </div>
+                </div>
+                <div class="team-info" style="padding: 1.5rem 1.2rem 1.8rem;">
+                    <h3 class="team-name" style="font-size: 1.5rem; font-weight: 700; margin-bottom: 0.3rem; color: #0f172a;">HLALELANI NORDEN</h3>
+                    <span class="team-role" style="font-size: 0.85rem; font-weight: 600; text-transform: uppercase; letter-spacing: 1px; color: #0072ff; margin-bottom: 0.75rem; display: inline-block; background: rgba(0, 114, 255, 0.1); padding: 0.2rem 0.8rem; border-radius: 30px;">CEO & Founder</span>
+                    <p class="team-bio" style="font-size: 0.9rem; color: #334155; line-height: 1.5; margin-top: 0.75rem;">Visionary leader with 15+ years in enterprise tech, driving Nass Tech's mission to empower businesses through digital transformation.</p>
+                </div>
+            </div>
+            
+            <!-- Team Member 2 - CTO (Rectangular Image, No Circle, Icons always visible) -->
+            <div class="team-card" style="background: #ffffff; border-radius: 1.5rem; overflow: hidden; box-shadow: 0 15px 35px -12px rgba(0, 0, 0, 0.08); transition: all 0.35s ease; text-align: center; border: 1px solid rgba(0, 114, 255, 0.08);">
+                <div class="team-img-wrapper" style="position: relative; background: linear-gradient(145deg, #eef2ff, #e0e7ff); overflow: hidden;">
+                    <img src="images/team/michael.jpeg" alt="Michael Rodriguez - CTO" style="width: 100%; aspect-ratio: 1 / 1; object-fit: cover; display: block;">
+                    <div class="team-social" style="position: absolute; bottom: 15px; left: 0; right: 0; display: flex; justify-content: center; gap: 0.75rem; opacity: 1; transform: translateY(0); transition: all 0.3s ease;">
+                        <a href="#" class="social-icon" style="background: white; width: 34px; height: 34px; border-radius: 50%; display: inline-flex; align-items: center; justify-content: center; color: #0072ff; font-size: 1.2rem; box-shadow: 0 4px 8px rgba(0,0,0,0.1); text-decoration: none;"><i class='bx bxl-linkedin'></i></a>
+                        <a href="#" class="social-icon" style="background: white; width: 34px; height: 34px; border-radius: 50%; display: inline-flex; align-items: center; justify-content: center; color: #0072ff; font-size: 1.2rem; box-shadow: 0 4px 8px rgba(0,0,0,0.1); text-decoration: none;"><i class='bx bxl-github'></i></a>
+                        <a href="#" class="social-icon" style="background: white; width: 34px; height: 34px; border-radius: 50%; display: inline-flex; align-items: center; justify-content: center; color: #0072ff; font-size: 1.2rem; box-shadow: 0 4px 8px rgba(0,0,0,0.1); text-decoration: none;"><i class='bx bx-envelope'></i></a>
+                    </div>
+                </div>
+                <div class="team-info" style="padding: 1.5rem 1.2rem 1.8rem;">
+                    <h3 class="team-name" style="font-size: 1.5rem; font-weight: 700; margin-bottom: 0.3rem; color: #0f172a;">Michael Rodriguez</h3>
+                    <span class="team-role" style="font-size: 0.85rem; font-weight: 600; text-transform: uppercase; letter-spacing: 1px; color: #0072ff; margin-bottom: 0.75rem; display: inline-block; background: rgba(0, 114, 255, 0.1); padding: 0.2rem 0.8rem; border-radius: 30px;">Chief Technology Officer</span>
+                    <p class="team-bio" style="font-size: 0.9rem; color: #334155; line-height: 1.5; margin-top: 0.75rem;">Cloud & AI specialist architecting scalable solutions. Michael leads innovation in full-stack development and modern infrastructure.</p>
+                </div>
+            </div>
+            
+            <!-- Team Member 3 - Head of Product (Rectangular Image, No Circle, Icons always visible) -->
+            <div class="team-card" style="background: #ffffff; border-radius: 1.5rem; overflow: hidden; box-shadow: 0 15px 35px -12px rgba(0, 0, 0, 0.08); transition: all 0.35s ease; text-align: center; border: 1px solid rgba(0, 114, 255, 0.08);">
+                <div class="team-img-wrapper" style="position: relative; background: linear-gradient(145deg, #eef2ff, #e0e7ff); overflow: hidden;">
+                    <img src="images/team/mitta.jpg" alt="Mitta - Product" style="width: 100%; aspect-ratio: 1 / 1; object-fit: cover; display: block;">
+                    <div class="team-social" style="position: absolute; bottom: 15px; left: 0; right: 0; display: flex; justify-content: center; gap: 0.75rem; opacity: 1; transform: translateY(0); transition: all 0.3s ease;">
+                        <a href="#" class="social-icon" style="background: white; width: 34px; height: 34px; border-radius: 50%; display: inline-flex; align-items: center; justify-content: center; color: #0072ff; font-size: 1.2rem; box-shadow: 0 4px 8px rgba(0,0,0,0.1); text-decoration: none;"><i class='bx bxl-linkedin'></i></a>
+                        <a href="#" class="social-icon" style="background: white; width: 34px; height: 34px; border-radius: 50%; display: inline-flex; align-items: center; justify-content: center; color: #0072ff; font-size: 1.2rem; box-shadow: 0 4px 8px rgba(0,0,0,0.1); text-decoration: none;"><i class='bx bxl-twitter'></i></a>
+                        <a href="#" class="social-icon" style="background: white; width: 34px; height: 34px; border-radius: 50%; display: inline-flex; align-items: center; justify-content: center; color: #0072ff; font-size: 1.2rem; box-shadow: 0 4px 8px rgba(0,0,0,0.1); text-decoration: none;"><i class='bx bx-envelope'></i></a>
+                    </div>
+                </div>
+                <div class="team-info" style="padding: 1.5rem 1.2rem 1.8rem;">
+                    <h3 class="team-name" style="font-size: 1.5rem; font-weight: 700; margin-bottom: 0.3rem; color: #0f172a;">Mitta</h3>
+                    <span class="team-role" style="font-size: 0.85rem; font-weight: 600; text-transform: uppercase; letter-spacing: 1px; color: #0072ff; margin-bottom: 0.75rem; display: inline-block; background: rgba(0, 114, 255, 0.1); padding: 0.2rem 0.8rem; border-radius: 30px;">Head of Product</span>
+                    <p class="team-bio" style="font-size: 0.9rem; color: #334155; line-height: 1.5; margin-top: 0.75rem;">Product strategist passionate about UX-driven development. Mitta ensures every solution aligns with client goals and market needs.</p>
+                </div>
+            </div>
+            
+            <!-- Team Member 4 - Lead Software Architect (Rectangular Image, No Circle, Icons always visible) -->
+            <div class="team-card" style="background: #ffffff; border-radius: 1.5rem; overflow: hidden; box-shadow: 0 15px 35px -12px rgba(0, 0, 0, 0.08); transition: all 0.35s ease; text-align: center; border: 1px solid rgba(0, 114, 255, 0.08);">
+                <div class="team-img-wrapper" style="position: relative; background: linear-gradient(145deg, #eef2ff, #e0e7ff); overflow: hidden;">
+                    <img src="images/team/david.jpeg" alt="David Khumalo - Architect" style="width: 100%; aspect-ratio: 1 / 1; object-fit: cover; display: block;">
+                    <div class="team-social" style="position: absolute; bottom: 15px; left: 0; right: 0; display: flex; justify-content: center; gap: 0.75rem; opacity: 1; transform: translateY(0); transition: all 0.3s ease;">
+                        <a href="#" class="social-icon" style="background: white; width: 34px; height: 34px; border-radius: 50%; display: inline-flex; align-items: center; justify-content: center; color: #0072ff; font-size: 1.2rem; box-shadow: 0 4px 8px rgba(0,0,0,0.1); text-decoration: none;"><i class='bx bxl-linkedin'></i></a>
+                        <a href="#" class="social-icon" style="background: white; width: 34px; height: 34px; border-radius: 50%; display: inline-flex; align-items: center; justify-content: center; color: #0072ff; font-size: 1.2rem; box-shadow: 0 4px 8px rgba(0,0,0,0.1); text-decoration: none;"><i class='bx bxl-github'></i></a>
+                        <a href="#" class="social-icon" style="background: white; width: 34px; height: 34px; border-radius: 50%; display: inline-flex; align-items: center; justify-content: center; color: #0072ff; font-size: 1.2rem; box-shadow: 0 4px 8px rgba(0,0,0,0.1); text-decoration: none;"><i class='bx bx-envelope'></i></a>
+                    </div>
+                </div>
+                <div class="team-info" style="padding: 1.5rem 1.2rem 1.8rem;">
+                    <h3 class="team-name" style="font-size: 1.5rem; font-weight: 700; margin-bottom: 0.3rem; color: #0f172a;">David Khumalo</h3>
+                    <span class="team-role" style="font-size: 0.85rem; font-weight: 600; text-transform: uppercase; letter-spacing: 1px; color: #0072ff; margin-bottom: 0.75rem; display: inline-block; background: rgba(0, 114, 255, 0.1); padding: 0.2rem 0.8rem; border-radius: 30px;">Lead Software Architect</span>
+                    <p class="team-bio" style="font-size: 0.9rem; color: #334155; line-height: 1.5; margin-top: 0.75rem;">Backend expert crafting robust, scalable systems. David specializes in microservices, APIs, and high-performance cloud solutions.</p>
+                </div>
+            </div>
+            
+            <!-- Team Member 5 - Head of Client Success (Rectangular Image, No Circle, Icons always visible) -->
+            <div class="team-card" style="background: #ffffff; border-radius: 1.5rem; overflow: hidden; box-shadow: 0 15px 35px -12px rgba(0, 0, 0, 0.08); transition: all 0.35s ease; text-align: center; border: 1px solid rgba(0, 114, 255, 0.08);">
+                <div class="team-img-wrapper" style="position: relative; background: linear-gradient(145deg, #eef2ff, #e0e7ff); overflow: hidden;">
+                    <img src="images/team/catemaluks.png" alt="Cate Maluks - Client Success" style="width: 100%; aspect-ratio: 1 / 1; object-fit: cover; display: block;">
+                    <div class="team-social" style="position: absolute; bottom: 15px; left: 0; right: 0; display: flex; justify-content: center; gap: 0.75rem; opacity: 1; transform: translateY(0); transition: all 0.3s ease;">
+                        <a href="#" class="social-icon" style="background: white; width: 34px; height: 34px; border-radius: 50%; display: inline-flex; align-items: center; justify-content: center; color: #0072ff; font-size: 1.2rem; box-shadow: 0 4px 8px rgba(0,0,0,0.1); text-decoration: none;"><i class='bx bxl-linkedin'></i></a>
+                        <a href="#" class="social-icon" style="background: white; width: 34px; height: 34px; border-radius: 50%; display: inline-flex; align-items: center; justify-content: center; color: #0072ff; font-size: 1.2rem; box-shadow: 0 4px 8px rgba(0,0,0,0.1); text-decoration: none;"><i class='bx bx-phone'></i></a>
+                        <a href="#" class="social-icon" style="background: white; width: 34px; height: 34px; border-radius: 50%; display: inline-flex; align-items: center; justify-content: center; color: #0072ff; font-size: 1.2rem; box-shadow: 0 4px 8px rgba(0,0,0,0.1); text-decoration: none;"><i class='bx bx-envelope'></i></a>
+                    </div>
+                </div>
+                <div class="team-info" style="padding: 1.5rem 1.2rem 1.8rem;">
+                    <h3 class="team-name" style="font-size: 1.5rem; font-weight: 700; margin-bottom: 0.3rem; color: #0f172a;">Cate Maluks</h3>
+                    <span class="team-role" style="font-size: 0.85rem; font-weight: 600; text-transform: uppercase; letter-spacing: 1px; color: #0072ff; margin-bottom: 0.75rem; display: inline-block; background: rgba(0, 114, 255, 0.1); padding: 0.2rem 0.8rem; border-radius: 30px;">Head of Client Success</span>
+                    <p class="team-bio" style="font-size: 0.9rem; color: #334155; line-height: 1.5; margin-top: 0.75rem;">Building strong partnerships with clients, ensuring seamless delivery and long-term value. Cate bridges business goals with technical execution.</p>
+                </div>
+            </div>
+            
+            <!-- Team Member 6 - Senior UI/UX Director (Rectangular Image, No Circle, Icons always visible) -->
+            <div class="team-card" style="background: #ffffff; border-radius: 1.5rem; overflow: hidden; box-shadow: 0 15px 35px -12px rgba(0, 0, 0, 0.08); transition: all 0.35s ease; text-align: center; border: 1px solid rgba(0, 114, 255, 0.08);">
+                <div class="team-img-wrapper" style="position: relative; background: linear-gradient(145deg, #eef2ff, #e0e7ff); overflow: hidden;">
+                    <img src="images/team/kim.jpeg" alt="kim - UI/UX" style="width: 100%; aspect-ratio: 1 / 1; object-fit: cover; display: block;">
+                    <div class="team-social" style="position: absolute; bottom: 15px; left: 0; right: 0; display: flex; justify-content: center; gap: 0.75rem; opacity: 1; transform: translateY(0); transition: all 0.3s ease;">
+                        <a href="#" class="social-icon" style="background: white; width: 34px; height: 34px; border-radius: 50%; display: inline-flex; align-items: center; justify-content: center; color: #0072ff; font-size: 1.2rem; box-shadow: 0 4px 8px rgba(0,0,0,0.1); text-decoration: none;"><i class='bx bxl-dribbble'></i></a>
+                        <a href="#" class="social-icon" style="background: white; width: 34px; height: 34px; border-radius: 50%; display: inline-flex; align-items: center; justify-content: center; color: #0072ff; font-size: 1.2rem; box-shadow: 0 4px 8px rgba(0,0,0,0.1); text-decoration: none;"><i class='bx bxl-linkedin'></i></a>
+                        <a href="#" class="social-icon" style="background: white; width: 34px; height: 34px; border-radius: 50%; display: inline-flex; align-items: center; justify-content: center; color: #0072ff; font-size: 1.2rem; box-shadow: 0 4px 8px rgba(0,0,0,0.1); text-decoration: none;"><i class='bx bx-envelope'></i></a>
+                    </div>
+                </div>
+                <div class="team-info" style="padding: 1.5rem 1.2rem 1.8rem;">
+                    <h3 class="team-name" style="font-size: 1.5rem; font-weight: 700; margin-bottom: 0.3rem; color: #0f172a;">Kim</h3>
+                    <span class="team-role" style="font-size: 0.85rem; font-weight: 600; text-transform: uppercase; letter-spacing: 1px; color: #0072ff; margin-bottom: 0.75rem; display: inline-block; background: rgba(0, 114, 255, 0.1); padding: 0.2rem 0.8rem; border-radius: 30px;">Senior UI/UX Director</span>
+                    <p class="team-bio" style="font-size: 0.9rem; color: #334155; line-height: 1.5; margin-top: 0.75rem;">Creative force behind intuitive interfaces and engaging digital experiences. Kim ensures every product blends aesthetics with accessibility.</p>
+                </div>
+            </div>
+        </div>
+        <p style="text-align:center; margin-top: 2.5rem; font-size: 0.9rem; color: #4b5563;">Join a team that's shaping the future of technology — <a href="careers.html" style="color:#0072ff; text-decoration:none; font-weight:500;">Explore careers →</a></p>
+    </section>
+
+    <!-- Add hover effect CSS for team cards (social icons always visible, card lift on hover) -->
+    <style>
+        .team-card:hover {
+            transform: translateY(-8px);
+            box-shadow: 0 30px 45px -15px rgba(0, 42, 58, 0.2);
+            border-color: rgba(0, 114, 255, 0.2);
+        }
+        /* Social icons are always visible - no hover needed to show them */
+        .social-icon:hover {
+            background: #0072ff;
+            color: white;
+            transform: scale(1.1);
+        }
+        @media (max-width: 768px) {
+            .team-grid {
+                gap: 1.8rem;
+            }
+            .team-name {
+                font-size: 1.3rem;
+            }
+        }
+        /* Ensure nav-links and mobile menu work properly (original functionality preserved) */
+        .menu-toggle {
+            display: none;
+            background: none;
+            border: none;
+            font-size: 1.8rem;
+            cursor: pointer;
+            color: #1e293b;
+        }
+        @media (max-width: 768px) {
+            .menu-toggle {
+                display: block;
+            }
+            .nav-links {
+                display: none;
+                width: 100%;
+                flex-direction: column;
+                gap: 1rem;
+                padding: 1rem 0;
+            }
+            .nav-links.active {
+                display: flex;
+            }
+            nav {
+                flex-wrap: wrap;
+            }
+        }
+    </style>
+
+    <!-- ================= FOOTER ================= -->
+    <footer>
+        <p>© 2026 Nass Tech Solution | All Rights Reserved</p>
+    </footer>
+
+    <script>
+    // ================= MOBILE MENU FUNCTIONALITY =================
+    document.addEventListener('DOMContentLoaded', function() {
+        const nav = document.querySelector('nav');
+        const existingToggle = document.querySelector('.menu-toggle');
+        
+        if (!existingToggle && nav) {
+            const toggleBtn = document.createElement('button');
+            toggleBtn.className = 'menu-toggle';
+            toggleBtn.setAttribute('aria-label', 'Toggle menu');
+            toggleBtn.setAttribute('aria-expanded', 'false');
+            toggleBtn.innerHTML = '<i class="bx bx-menu"></i>';
+            
+            const logo = document.querySelector('.logo');
+            if (logo && logo.nextSibling) {
+                nav.insertBefore(toggleBtn, logo.nextSibling);
+            } else {
+                nav.insertBefore(toggleBtn, nav.firstChild);
+            }
+        }
+        
+        const menuToggle = document.querySelector('.menu-toggle');
+        const navLinks = document.querySelector('.nav-links');
+        
+        if (menuToggle && navLinks) {
+            menuToggle.addEventListener('click', function(e) {
+                e.stopPropagation();
+                navLinks.classList.toggle('active');
+                const isExpanded = navLinks.classList.contains('active');
+                menuToggle.setAttribute('aria-expanded', isExpanded);
+                const icon = menuToggle.querySelector('i');
+                if (icon) {
+                    if (navLinks.classList.contains('active')) {
+                        icon.classList.remove('bx-menu');
+                        icon.classList.add('bx-x');
+                    } else {
+                        icon.classList.remove('bx-x');
+                        icon.classList.add('bx-menu');
+                    }
+                }
+            });
+            
+            const navLinksItems = navLinks.querySelectorAll('a');
+            navLinksItems.forEach(link => {
+                link.addEventListener('click', function() {
+                    navLinks.classList.remove('active');
+                    const icon = menuToggle.querySelector('i');
+                    if (icon) {
+                        icon.classList.remove('bx-x');
+                        icon.classList.add('bx-menu');
+                    }
+                    menuToggle.setAttribute('aria-expanded', 'false');
+                });
+            });
+        }
+        
+        document.addEventListener('click', function(event) {
+            const menuToggle = document.querySelector('.menu-toggle');
+            const navLinks = document.querySelector('.nav-links');
+            if (menuToggle && navLinks && navLinks.classList.contains('active')) {
+                if (!menuToggle.contains(event.target) && !navLinks.contains(event.target)) {
+                    navLinks.classList.remove('active');
+                    const icon = menuToggle.querySelector('i');
+                    if (icon) {
+                        icon.classList.remove('bx-x');
+                        icon.classList.add('bx-menu');
+                    }
+                    menuToggle.setAttribute('aria-expanded', 'false');
+                }
+            }
+        });
+        
+        window.addEventListener('resize', function() {
+            const menuToggle = document.querySelector('.menu-toggle');
+            const navLinks = document.querySelector('.nav-links');
+            if (window.innerWidth > 768 && navLinks && navLinks.classList.contains('active')) {
+                navLinks.classList.remove('active');
+                if (menuToggle) {
+                    const icon = menuToggle.querySelector('i');
+                    if (icon) {
+                        icon.classList.remove('bx-x');
+                        icon.classList.add('bx-menu');
+                    }
+                    menuToggle.setAttribute('aria-expanded', 'false');
+                }
+            }
+        });
+        
+        // Animate team cards on scroll
+        const teamCards = document.querySelectorAll('.team-card');
+        if (teamCards.length && 'IntersectionObserver' in window) {
+            const observer = new IntersectionObserver((entries) => {
+                entries.forEach(entry => {
+                    if (entry.isIntersecting) {
+                        entry.target.style.opacity = '1';
+                        entry.target.style.transform = 'translateY(0)';
+                        observer.unobserve(entry.target);
+                    }
+                });
+            }, { threshold: 0.1 });
+            teamCards.forEach(card => {
+                card.style.opacity = '0';
+                card.style.transform = 'translateY(20px)';
+                card.style.transition = 'opacity 0.5s ease, transform 0.5s ease';
+                observer.observe(card);
+            });
+        } else {
+            teamCards.forEach(card => {
+                card.style.opacity = '1';
+                card.style.transform = 'translateY(0)';
+            });
+        }
+    });
+    </script>
+
+    <script src="js/script.js"></script>
+</body>
+</html>

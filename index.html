@@ -1,0 +1,361 @@
+<!DOCTYPE html>
+<!-- Declares the document type and version as HTML5 for proper browser rendering and standards compliance -->
+<html lang="en">
+    <!-- Root element of the HTML document. The 'lang' attribute sets the primary language to English for accessibility (screen readers) and search engine optimization (SEO) -->
+
+<head>
+    <!-- Contains meta-information about the document that is not displayed on the page itself -->
+    
+    <meta charset="UTF-8">
+    <!-- Specifies the character encoding for the document as UTF-8, which supports almost all international characters, symbols, and emojis -->
+    
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Ensures proper responsive behavior on mobile devices by setting the viewport width equal to the device's width and initial zoom scale to 1.0. Prevents mobile browsers from scaling down the page -->
+     <meta name="description" content="Nass Tech Solution provides professional IT solutions, web development, and 24/7 IT support in South Africa. Fast response, affordable pricing. Contact us today!">
+     <meta name="keywords" content=" IT solutions, web development, network solutions, IT support, digital services, tech company, Nass Tech"> 
+    
+    <title>Nass Tech Solution | Home</title>
+    <!-- Sets the title of the web page, which appears on the browser tab, in bookmarks, and in search engine results -->
+    
+    <link rel="stylesheet" href="css/style.css">
+    <!-- Links an external CSS stylesheet (located at css/style.css) to control the visual styling, layout, and responsive design of the page -->
+    
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <!-- Imports the Boxicons icon library from a CDN (Content Delivery Network), providing a wide range of scalable vector icons for use throughout the page -->
+    
+    <link rel="icon" href="images/logo/logo.png">
+    <!-- Sets the favicon (small icon displayed in the browser tab next to the page title) to the company logo image -->
+</head>
+
+<body>
+    <!-- Contains all visible content of the web page that users interact with -->
+   
+</button>
+
+    <!-- ================= NAVIGATION BAR ================= -->
+    <!-- Creates the primary navigation menu at the top of the page for site-wide navigation -->
+    <nav>
+        <!-- Semantic HTML5 element specifically for navigation sections -->
+        
+        <div class="logo">
+            <!-- Container for the company logo, typically positioned on the left of the navigation bar -->
+            <img src="images/logo/logo.png" alt="Nass Tech Logo">
+            <!-- Displays the company logo image. The 'alt' attribute provides alternative text for screen readers and when images fail to load. Credit note: raf design.com -->
+        </div>
+        
+        <ul class="nav-links">
+            <!-- Unordered list holding all primary navigation links. The 'nav-links' class is used for CSS styling (flexbox/horizontal layout) -->
+            <li><a href="index.html" class="active">Home</a></li>
+            <!-- List item with hyperlink to the Home page. The 'active' class highlights the current page in the navigation menu (typically different color or underline) -->
+            <li><a href="about_us.html">About</a></li>
+            <!-- Link to the About Us page -->
+            <li><a shref="services.html">Services</a></li>
+            <!-- Link to the Services page -->
+            <li><a href="careers.html">Careers</a></li>
+            <!-- Link to the Careers/Jobs page -->
+            <li><a href="client-portal.html">Client Portal</a></li>
+            <!-- Link to the Client Portal (likely a login-protected area for existing clients) -->
+            <li><a href="enquiries.html">Enquiry</a></li>
+            <!-- Link to the Enquiry/Contact form page -->
+            <li><a href="contact_us.html">Contact</a></li>
+            <!-- Link to the Contact Us page -->
+            <li><a href="blog.html">Blog</a></li>
+            <!-- Link to the company Blog page -->
+        </ul>
+        
+        <div class="nav-buttons">
+            <!-- Container for authentication/account action buttons, typically positioned on the right side of the navigation bar -->
+            <a href="#" class="btn">Sign In</a>
+            <!-- Sign In button (currently placeholder link with '#'). Allows existing users to log into their account -->
+            <a href="#" class="btn logout">Sign Out</a>
+            <!-- Sign Out button with an additional 'logout' class for specific styling (could be hidden when user is not logged in via JavaScript) -->
+        </div>
+    </nav>
+
+    <!-- ================= HERO SECTION ================= -->
+    <!-- Large promotional banner area at the top of the page designed to grab user attention and communicate the core value proposition -->
+    <section class="hero" style="background: linear-gradient(135deg, rgba(0,42,58,0.85), rgba(0,114,255,0.75)), url('images/hero/bg_img.jpg'); background-size: cover; background-position: center;">
+        <!-- Inline style creates a dark gradient overlay (135-degree angle from dark teal to semi-transparent blue) over a background image (bg_img.jpg). 
+             The overlay improves text readability. 'background-size: cover' ensures the image covers the entire section; 'background-position: center' centers the image -->
+        
+        <div class="hero-content">
+            <!-- Container for the hero text content, centered on top of the background image -->
+            <h1>Welcome to Nass Tech Solution</h1>
+            <!-- Main heading of the hero section - the most important text on the page for both users and SEO -->
+            <p>We provide professional IT solutions, web development, and digital services to help your business grow.</p>
+            <!-- Supporting subheading text describing the company's core services and value proposition -->
+            <a href="services.html" class="btn">Explore Services</a>
+            <!-- Call-to-action button that directs users to the Services page to learn more about offerings -->
+        </div>
+    </section>
+
+    <!-- ================= SIDEBAR ================= -->
+    <!-- Sidebar navigation panel - typically positioned on the left or right side of the page containing additional navigation links and social media shortcuts -->
+    <aside>
+        <!-- Semantic HTML5 element for content that is tangentially related to the main content (sidebar content) -->
+        
+        <h1>Nass Tech Solutions</h1>
+        <!-- Sidebar heading displaying the company name -->
+        
+        <ul>
+            <!-- Unordered list containing sidebar navigation and social media links with icons -->
+            <li><a href="#"><i class='bx bx-home'></i> Home</a></li>
+            <!-- Link to Home page with home icon. Currently placeholder '#' - should be updated to actual URL -->
+            <li><a href="#"><i class='bx bxs-dashboard'></i> Dashboard</a></li>
+            <!-- Link to Dashboard (likely client portal or user account dashboard) with dashboard icon -->
+            <li><a href="contact_us.html"><i class='bx bxs-contact'></i> Contact</a></li>
+            <!-- Link to Contact Us page with contact icon -->
+            <li><a href="#"><i class='bx bxs-bell-ring'></i> Notification</a></li>
+            <!-- Link to Notifications center with bell icon (could be for user alerts/messages) -->
+            <li><a href="#"><i class='bx bxl-whatsapp'></i> WhatsApp</a></li>
+            <!-- Link to WhatsApp (likely company WhatsApp chat or business profile) with WhatsApp brand icon -->
+            <li><a href="#"><i class='bx bxl-facebook-circle'></i> Facebook</a></li>
+            <!-- Link to company Facebook page with Facebook brand icon -->
+            <li><a href="#"><i class='bx bxl-instagram'></i> Instagram</a></li>
+            <!-- Link to company Instagram profile with Instagram brand icon -->
+            <li><a href="#"><i class='bx bxl-tiktok'></i> TikTok</a></li>
+            <!-- Link to company TikTok channel with TikTok brand icon -->
+            <li><a href="#"><i class='bx bxl-youtube'></i> YouTube</a></li>
+            <!-- Link to company YouTube channel with YouTube brand icon -->
+        </ul>
+    </aside>
+
+<!-- Search Bar Section -->
+<div class="search-section" style="max-width: 600px; margin: 20px auto; padding: 0 20px;">
+    <div class="search-container" style="position: relative;">
+        <i class='bx bx-search' style="position: absolute; left: 15px; top: 50%; transform: translateY(-50%); font-size: 20px; color: #999;"></i>
+        <input type="text" id="liveSearch" placeholder="Search services, blog posts, or jobs..." 
+               style="width: 100%; padding: 14px 20px 14px 45px; border: 2px solid #e0e6ed; border-radius: 50px; font-size: 16px; transition: all 0.3s;">
+        <button id="clearSearch" style="position: absolute; right: 15px; top: 50%; transform: translateY(-50%); background: none; border: none; cursor: pointer; display: none;">
+            <i class='bx bx-x' style="font-size: 20px; color: #999;"></i>
+        </button>
+    </div>
+    <div id="searchResults" style="margin-top: 10px; font-size: 14px; color: #666; text-align: center;"></div>
+</div>
+    <!-- ================= FEATURED SERVICES SECTION ================= -->
+    <!-- Highlights three core services offered by the company in a card-based layout to quickly inform visitors about key offerings -->
+    <section class="section">
+        <!-- Generic section container with class 'section' for consistent styling (padding, margins, max-width, etc.) -->
+        
+        <h2>Our Featured Services</h2>
+        <!-- Section heading identifying the content as featured services -->
+        
+        <div class="cards">
+            <!-- Container using CSS Grid or Flexbox (via the 'cards' class) to display service cards in a responsive grid layout -->
+            
+            <div class="card">
+                <!-- Individual card component for one featured service -->
+                <img src="images/home/dev1.jpg" alt="Web Development">
+                <!-- Service-related image with descriptive alt text for accessibility -->
+                <h3>Web Development</h3>
+                <!-- Service title -->
+                <p>Modern, responsive websites that grow your business and attract more customers.</p>
+                <!-- Brief description of the web development service -->
+            </div>
+            
+            <div class="card">
+                <!-- Second featured service card -->
+                <img src="images/home/remotes.png" alt="IT Support">
+                <h3>IT Support</h3>
+                <p>24/7 professional IT assistance and troubleshooting for all your tech needs.</p>
+                <!-- Highlights round-the-clock support availability -->
+            </div>
+            
+            <div class="card">
+                <!-- Third featured service card -->
+                <img src="images/home/net.jpg" alt="Network Solutions">
+                <h3>Network Solutions</h3>
+                <p>Secure and reliable networking solutions for your business infrastructure.</p>
+                <!-- Focuses on security and reliability for business networks -->
+            </div>
+        </div>
+    </section>
+
+    <!-- ================= WHY CHOOSE US SECTION ================= -->
+    <!-- Highlights key differentiators and value propositions to build trust and persuade potential clients to choose this company -->
+    <section class="section">
+        <h2>Why Choose Us?</h2>
+        <!-- Section heading asking a persuasive question to engage users and introduce the benefits -->
+        
+        <div class="contact-grid">
+            <!-- Container using a grid layout (similar to 'cards' but named 'contact-grid' for semantic clarity) to display benefit features -->
+            
+            <div class="contact-card">
+                <!-- Individual feature card for each benefit -->
+                <div class="contact-icon">
+                    <i class='bx bx-timer'></i>
+                    <!-- Boxicons timer icon representing quick/fast response time -->
+                </div>
+                <h3>Fast Response</h3>
+                <!-- Benefit title -->
+                <p>Quick turnaround time and 24/7 support availability for all clients.</p>
+                <!-- Detailed explanation of the benefit -->
+            </div>
+            
+            <div class="contact-card">
+                <!-- Second benefit card -->
+                <div class="contact-icon">
+                    <i class='bx bx-dollar'></i>
+                    <!-- Dollar sign icon representing affordability and cost-effectiveness -->
+                </div>
+                <h3>Affordable</h3>
+                <p>Competitive pricing with high-quality service delivery guaranteed.</p>
+                <!-- Emphasizes value for money -->
+            </div>
+            
+            <div class="contact-card">
+                <!-- Third benefit card -->
+                <div class="contact-icon">
+                    <i class='bx bx-certification'></i>
+                    <!-- Certification/badge icon representing professional credentials and expertise -->
+                </div>
+                <h3>Professional</h3>
+                <p>Certified experts with years of industry experience and knowledge.</p>
+                <!-- Highlights team qualifications -->
+            </div>
+            
+            <div class="contact-card">
+                <!-- Fourth benefit card -->
+                <div class="contact-icon">
+                    <i class='bx bx-support'></i>
+                    <!-- Support/headset icon representing customer service and client focus -->
+                </div>
+                <h3>Customer Focus</h3>
+                <p>Your satisfaction is our number one priority and commitment.</p>
+                <!-- Emphasizes client-centric approach -->
+            </div>
+        </div>
+    </section>
+
+    <!-- ================= FOOTER ================= -->
+    <!-- Bottom section of the page containing copyright, legal information, and often additional links -->
+    <footer>
+        <!-- Semantic HTML5 element for footer content - typically appears at the bottom of every page -->
+        <p>© 2026 Nass Tech Solution | All Rights Reserved</p>
+        <!-- Copyright notice with the company name, current year, and legal rights statement. 
+             The '©' symbol represents the copyright mark. This protects the company's ownership of the website content -->
+    </footer>
+    <script>
+    // ================= MOBILE MENU FUNCTIONALITY =================
+    // This script adds a hamburger menu button and makes the navigation responsive on mobile devices
+    
+    document.addEventListener('DOMContentLoaded', function() {
+        // Get the navigation element
+        const nav = document.querySelector('nav');
+        
+        // Check if hamburger button already exists (to avoid duplicates)
+        const existingToggle = document.querySelector('.menu-toggle');
+        
+        // Create hamburger button if it doesn't exist
+        if (!existingToggle && nav) {
+            // Create the hamburger button element
+            const toggleBtn = document.createElement('button');
+            toggleBtn.className = 'menu-toggle';
+            toggleBtn.setAttribute('aria-label', 'Toggle menu');
+            toggleBtn.setAttribute('aria-expanded', 'false');
+            toggleBtn.innerHTML = '<i class="bx bx-menu"></i>'; // Using Boxicons menu icon
+            
+            // Find where to insert the button (after the logo)
+            const logo = document.querySelector('.logo');
+            if (logo && logo.nextSibling) {
+                nav.insertBefore(toggleBtn, logo.nextSibling);
+            } else {
+                nav.insertBefore(toggleBtn, nav.firstChild);
+            }
+        }
+        
+        // Get the menu toggle button and navigation links
+        const menuToggle = document.querySelector('.menu-toggle');
+        const navLinks = document.querySelector('.nav-links');
+        
+        // Add click functionality if both elements exist
+        if (menuToggle && navLinks) {
+            menuToggle.addEventListener('click', function(e) {
+                e.stopPropagation();
+                
+                // Toggle the 'active' class on nav-links
+                navLinks.classList.toggle('active');
+                
+                // Update aria-expanded attribute for accessibility
+                const isExpanded = navLinks.classList.contains('active');
+                menuToggle.setAttribute('aria-expanded', isExpanded);
+                
+                // Change icon between menu and close (X)
+                const icon = menuToggle.querySelector('i');
+                if (icon) {
+                    if (navLinks.classList.contains('active')) {
+                        icon.classList.remove('bx-menu');
+                        icon.classList.add('bx-x');
+                    } else {
+                        icon.classList.remove('bx-x');
+                        icon.classList.add('bx-menu');
+                    }
+                }
+            });
+            
+            // Close the menu when a navigation link is clicked (good user experience)
+            const navLinksItems = navLinks.querySelectorAll('a');
+            navLinksItems.forEach(link => {
+                link.addEventListener('click', function() {
+                    navLinks.classList.remove('active');
+                    
+                    // Reset the menu icon back to hamburger
+                    const icon = menuToggle.querySelector('i');
+                    if (icon) {
+                        icon.classList.remove('bx-x');
+                        icon.classList.add('bx-menu');
+                    }
+                    
+                    // Update aria-expanded
+                    menuToggle.setAttribute('aria-expanded', 'false');
+                });
+            });
+        }
+        
+        // Close menu when clicking outside of it (optional but improves UX)
+        document.addEventListener('click', function(event) {
+            const menuToggle = document.querySelector('.menu-toggle');
+            const navLinks = document.querySelector('.nav-links');
+            
+            if (menuToggle && navLinks && navLinks.classList.contains('active')) {
+                // Check if click is outside both the menu toggle and the nav links
+                if (!menuToggle.contains(event.target) && !navLinks.contains(event.target)) {
+                    navLinks.classList.remove('active');
+                    
+                    // Reset the menu icon back to hamburger
+                    const icon = menuToggle.querySelector('i');
+                    if (icon) {
+                        icon.classList.remove('bx-x');
+                        icon.classList.add('bx-menu');
+                    }
+                    
+                    // Update aria-expanded
+                    menuToggle.setAttribute('aria-expanded', 'false');
+                }
+            }
+        });
+        
+        // Handle window resize - reset menu if screen becomes larger
+        window.addEventListener('resize', function() {
+            const menuToggle = document.querySelector('.menu-toggle');
+            const navLinks = document.querySelector('.nav-links');
+            
+            if (window.innerWidth > 768 && navLinks && navLinks.classList.contains('active')) {
+                navLinks.classList.remove('active');
+                
+                // Reset the menu icon
+                if (menuToggle) {
+                    const icon = menuToggle.querySelector('i');
+                    if (icon) {
+                        icon.classList.remove('bx-x');
+                        icon.classList.add('bx-menu');
+                    }
+                    menuToggle.setAttribute('aria-expanded', 'false');
+                }
+            }
+        });
+    });
+</script>
+<script src="js/script.js"></script>
+</body>
+</html>

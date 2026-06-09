@@ -1,0 +1,481 @@
+<!DOCTYPE html>
+<!-- Declares the document type and version of HTML as HTML5 for proper browser rendering -->
+<html lang="en">
+<!-- Root element of the HTML document. The 'lang' attribute sets the primary language to English for accessibility and search engines -->
+
+<head>
+    <!-- Contains meta-information about the document that is not displayed on the page itself -->
+    <meta charset="UTF-8">
+    <!-- Specifies the character encoding for the document as UTF-8, which supports almost all international characters and symbols -->
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Ensures proper responsive behavior on mobile devices by setting the viewport width equal to the device's width and initial zoom scale to 1.0 -->
+     <meta name="description" content=" Tech Solution offers expert IT services including cybersecurity, cloud security, data analytics, hardware setup, Wi-Fi networking, IT support, website design, and maintenance. Get a free quote today!">
+     <meta name="keywords" content="IT services, cybersecurity, cloud security, data analytics, hardware setup, network solutions, IT support, website design, remote support, South Africa">
+
+    <title>Our Services | Nass Tech Solution</title>
+    <!-- Sets the title of the web page, which appears on the browser tab and in search engine results -->
+
+    <link rel="stylesheet" href="css/style.css">
+    <!-- Links an external CSS stylesheet (located at css/style.css) to control the visual styling of the page -->
+
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <!-- Imports the Boxicons icon library from a CDN, providing a wide range of vector icons for use in the page -->
+
+    <link rel="icon" href="images/logo/logo.png">
+    <!-- Sets the favicon (small icon displayed in the browser tab) to the company logo image -->
+</head>
+
+<body>
+    <!-- Contains all visible content of the web page -->
+
+    <!-- ================= NAVIGATION BAR ================= -->
+    <!-- Creates the primary navigation menu at the top of the page -->
+    <nav>
+        <!-- Semantic HTML5 element for the navigation section -->
+        <div class="logo">
+            <!-- Container for the company logo -->
+            <img src="images/logo/logo.png" alt="Nass Tech Logo">
+            <!-- Displays the company logo image. The 'alt' attribute provides alternative text for accessibility -->
+        </div>
+
+        <ul class="nav-links">
+            <!-- Unordered list holding all navigation links -->
+            <li><a href="index.html">Home</a></li>
+            <!-- List item with a hyperlink to the Home page -->
+            <li><a href="about_us.html">About</a></li>
+            <!-- Link to the About Us page -->
+            <li><a href="services.html" class="active">Services</a></li>
+            <!-- Link to the Services page. The 'active' class highlights the current page in the navigation menu -->
+            <li><a href="careers.html">Careers</a></li>
+            <!-- Link to the Careers page -->
+            <li><a href="client-portal.html">Client Portal</a></li>
+            <!-- Link to the Client Portal page -->
+            <li><a href="enquiries.html">Enquiry</a></li>
+            <!-- Link to the Enquiry/Enquiries page -->
+            <li><a href="contact_us.html">Contact</a></li>
+            <!-- Link to the Contact Us page -->
+            <li><a href="blog.html">Blog</a></li>
+            <!-- Link to the Blog page -->
+        </ul>
+
+        <div class="nav-buttons">
+            <!-- Container for authentication buttons -->
+            <a href="#" class="btn">Sign In</a>
+            <!-- Sign In button (currently placeholder link with '#') -->
+            <a href="#" class="btn logout">Sign Out</a>
+            <!-- Sign Out button with an additional 'logout' class for specific styling -->
+        </div>
+    </nav>
+
+    <!-- ================= HERO SECTION ================= -->
+    <!-- Large promotional banner area typically at the top of the page to grab user attention -->
+    <section class="hero" style="background: linear-gradient(135deg, rgba(0,42,58,0.85), rgba(0,114,255,0.75)), url('images/hero/serv.jpg'); background-size: cover; background-position: center;">
+        <!-- Inline style creates a dark gradient overlay over a background image (serv.jpg) to improve text readability. The background covers the entire section and is centered -->
+        <div class="hero-content">
+            <!-- Container for the hero text content -->
+            <h1>Our Services</h1>
+            <!-- Main heading of the hero section -->
+            <p>Comprehensive IT solutions tailored to your business needs.</p>
+            <!-- Supporting subheading text -->
+        </div>
+    </section>
+
+    <!-- ================= ALL SERVICES SECTION - 9 SERVICES ================= -->
+    <!-- Displays all individual IT services offered by the company in a card-based layout -->
+    <section class="section">
+        <!-- Generic section container with class 'section' for consistent styling -->
+        <h2>Our Complete Service List</h2>
+        <!-- Section heading identifying the content as a full list of services -->
+
+        <div class="cards">
+            <!-- Container using CSS Grid or Flexbox to display service cards in a responsive grid -->
+
+            <!-- 1. Cyber Security Services Card -->
+            <div class="card">
+                <!-- Individual card component for one service -->
+                <img src="images/services/cyber.jpg" alt="Cyber Security">
+                <!-- Service-related image with descriptive alt text -->
+                <h3>🔒 Cyber Security Services</h3>
+                <!-- Service title with an emoji icon for visual appeal -->
+                <p>Protect your business from evolving cyber threats with comprehensive security solutions including threat detection, penetration testing, 24/7 monitoring, and incident response.</p>
+                <!-- Detailed description of the service -->
+                <div class="price">R5000<span>/mo</span></div>
+                <!-- Pricing information. The 'price' class styles the cost, and the nested 'span' indicates the billing period (per month) -->
+                <a href="enquiries.html" class="btn" style="margin-top: 15px;">Get Quote</a>
+                <!-- Call-to-action button linking to the Enquiries page to request a quote. Inline margin adds spacing above -->
+            </div>
+
+            <!-- 2. Data & Analytics Card -->
+            <div class="card">
+                <img src="images/services/data_a.jpg" alt="Data & Analytics">
+                <h3>📊 Data & Analytics</h3>
+                <p>Transform your data into actionable insights with business intelligence, predictive analytics, custom dashboards, and data visualization that drive smart decision-making.</p>
+                <div class="price">R6500<span>/mo</span></div>
+                <a href="enquiries.html" class="btn" style="margin-top: 15px;">Get Quote</a>
+            </div>
+
+            <!-- 3. Cloud Security Card -->
+            <div class="card">
+                <img src="images/services/cloud_security.jpg" alt="Cloud Security">
+                <h3>☁️ Cloud Security</h3>
+                <p>Secure your cloud infrastructure with zero-trust architecture, compliance management, data encryption, and advanced threat protection across AWS, Azure, and Google Cloud.</p>
+                <div class="price">R5500<span>/mo</span></div>
+                <a href="enquiries.html" class="btn" style="margin-top: 15px;">Get Quote</a>
+            </div>
+
+            <!-- 4. Hardware Setup Card -->
+            <div class="card">
+                <img src="images/services/setup.jpg" alt="Hardware Setup">
+                <h3>🖥️ Hardware Setup</h3>
+                <p>Professional installation and configuration of computers, servers, printers, networking equipment, and peripherals for optimal performance and reliability.</p>
+                <div class="price">R2400<span>/setup</span></div>
+                <!-- One-time setup fee rather than monthly recurring -->
+                <a href="enquiries.html" class="btn" style="margin-top: 15px;">Book Now</a>
+                <!-- Different CTA text appropriate for a one-time service -->
+            </div>
+
+            <!-- 5. Wi-Fi & Network Card -->
+            <div class="card">
+                <img src="images/services/wi_fi.jpg" alt="Wi-Fi and Network">
+                <h3>📡 Wi-Fi & Network</h3>
+                <p>Reliable and secure wireless and wired network solutions including router configuration, mesh systems, VLAN setup, and network security optimization.</p>
+                <div class="price">R3250<span>/mo</span></div>
+                <a href="enquiries.html" class="btn" style="margin-top: 15px;">Get Quote</a>
+            </div>
+
+            <!-- 6. IT Support & Repairs Card -->
+            <div class="card">
+                <img src="images/services/repair.jpg" alt="IT Support and Repairs">
+                <h3>🔧 IT Support & Repairs</h3>
+                <p>Fast and reliable troubleshooting, hardware repairs, virus removal, software installation, and technical support for all your IT needs.</p>
+                <div class="price">R250<span>/hour</span></div>
+                <!-- Hourly rate pricing model for support services -->
+                <a href="enquiries.html" class="btn" style="margin-top: 15px;">Get Support</a>
+                <!-- CTA specific to technical support requests -->
+            </div>
+
+            <!-- 7. Website Design Card -->
+            <div class="card">
+                <img src="images/services/design.jpg" alt="Website Design">
+                <h3>🎨 Website Design</h3>
+                <p>Modern, responsive, and SEO-friendly websites tailored to your brand. Includes custom design, mobile optimization, and content management system integration.</p>
+                <div class="price">R16000<span>/one-time</span></div>
+                <!-- One-time project fee for website design -->
+                <a href="enquiries.html" class="btn" style="margin-top: 15px;">Start Project</a>
+                <!-- CTA appropriate for project-based work -->
+            </div>
+
+            <!-- 8. Maintenance Card -->
+            <div class="card">
+                <img src="images/services/maintenance.jpg" alt="Maintenance">
+                <h3>⚙️ Maintenance</h3>
+                <p>Keep your systems updated, secure, and running smoothly with regular software updates, security patches, performance optimization, and backup management.</p>
+                <div class="price">R2300<span>/mo</span></div>
+                <a href="enquiries.html" class="btn" style="margin-top: 15px;">Get Quote</a>
+            </div>
+
+            <!-- 9. Remote Support Card -->
+            <div class="card">
+                <img src="images/services/support.jpg" alt="Remote Support">
+                <h3>💻 Remote Support</h3>
+                <p>Fast and secure remote assistance without needing an on-site visit. Get immediate help for software issues, configurations, and troubleshooting from anywhere.</p>
+                <div class="price">R950<span>/session</span></div>
+                <!-- Per-session pricing for remote assistance -->
+                <a href="enquiries.html" class="btn" style="margin-top: 15px;">Get Remote Help</a>
+                <!-- CTA for remote support requests -->
+            </div>
+        </div>
+    </section>
+
+    <!-- ================= PRICING PLANS SECTION ================= -->
+    <!-- Displays bundled service packages with different tiers and feature sets -->
+    <section class="section">
+        <h2>Service Packages</h2>
+        <!-- Section heading for pricing packages -->
+        <div class="cards">
+            <!-- Reusing the same 'cards' container for consistent grid layout -->
+
+            <!-- Starter Package Card -->
+            <div class="card">
+                <h3>Starter Package</h3>
+                <!-- No image for package cards to differentiate from individual services -->
+                <div class="price">R5000<span>/mo</span></div>
+                <!-- Monthly price for the basic package -->
+                <p>✔ Basic Cybersecurity</p>
+                <!-- Checkmark indicates feature is included -->
+                <p>✔ Standard Support (9-5)</p>
+                <p>✔ Monthly Reports</p>
+                <p>✔ Remote Support (2 sessions)</p>
+                <p>✖ Advanced Analytics</p>
+                <!-- '✖' (cross mark) indicates feature is NOT included in this tier -->
+                <p>✖ Cloud Security</p>
+                <a href="enquiries.html" class="btn" style="margin-top: 20px;">Choose Plan</a>
+                <!-- Button for selecting this package -->
+            </div>
+
+            <!-- Professional Package Card -->
+            <div class="card">
+                <h3>Professional Package</h3>
+                <!-- Mid-tier package with more features -->
+                <div class="price">R11500<span>/mo</span></div>
+                <p>✔ Advanced Cybersecurity</p>
+                <p>✔ 24/7 Premium Support</p>
+                <p>✔ Real-time Analytics Dashboard</p>
+                <p>✔ Cloud Security Essentials</p>
+                <p>✔ Network Monitoring</p>
+                <p>✔ Weekly Reports</p>
+                <a href="enquiries.html" class="btn" style="margin-top: 20px;">Choose Plan</a>
+            </div>
+
+            <!-- Enterprise Package Card -->
+            <div class="card">
+                <h3>Enterprise Package</h3>
+                <!-- Highest-tier package with custom pricing -->
+                <div class="price">Custom</div>
+                <!-- Indicates pricing is not fixed and requires consultation -->
+                <p>✔ Full Suite Security</p>
+                <p>✔ Dedicated Security Team</p>
+                <p>✔ Custom Analytics Platform</p>
+                <p>✔ Advanced Cloud Security</p>
+                <p>✔ Full IT Infrastructure Management</p>
+                <p>✔ SLA Guarantee (99.9%)</p>
+                <!-- Service Level Agreement guarantee for enterprise clients -->
+                <a href="contact_us.html" class="btn" style="margin-top: 20px;">Contact Sales</a>
+                <!-- Different CTA linking to Contact page rather than generic Enquiries page, as enterprise requires direct sales conversation -->
+            </div>
+        </div>
+    </section>
+
+    <!-- ================= WHY CHOOSE US SECTION ================= -->
+    <!-- Highlights key differentiators and value propositions of the company -->
+    <section class="section">
+        <h2>Why Choose Us?</h2>
+        <!-- Section heading asking a persuasive question to engage users -->
+
+        <div class="contact-grid">
+            <!-- Container using a grid layout (similar to 'cards' but named 'contact-grid' for semantic clarity) -->
+
+            <!-- Fast Response Feature -->
+            <div class="contact-card">
+                <!-- Individual feature card -->
+                <div class="contact-icon"><i class='bx bx-timer'></i></div>
+                <!-- Boxicons timer icon representing quick response time -->
+                <h3>Fast Response</h3>
+                <p>Quick turnaround time and 24/7 support availability for all clients.</p>
+            </div>
+
+            <!-- Affordable Feature -->
+            <div class="contact-card">
+                <div class="contact-icon"><i class='bx bx-dollar'></i></div>
+                <!-- Dollar sign icon representing cost-effectiveness -->
+                <h3>Affordable</h3>
+                <p>Competitive pricing with high-quality service delivery guaranteed.</p>
+            </div>
+
+            <!-- Professional Feature -->
+            <div class="contact-card">
+                <div class="contact-icon"><i class='bx bx-certification'></i></div>
+                <!-- Certification/badge icon representing professional credentials -->
+                <h3>Professional</h3>
+                <p>Certified experts with years of industry experience and knowledge.</p>
+            </div>
+
+            <!-- Customer Focus Feature -->
+            <div class="contact-card">
+                <div class="contact-icon"><i class='bx bx-support'></i></div>
+                <!-- Support icon emphasizing customer-centric approach -->
+                <h3>Customer Focus</h3>
+                <p>Your satisfaction is our number one priority and commitment.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- ================= FOOTER ================= -->
+    <!-- Bottom section of the page containing copyright and legal information -->
+    <footer>
+        <!-- Semantic HTML5 element for footer content -->
+        <p>© 2026 Nass Tech Solution | All Rights Reserved</p>
+        <!-- Copyright notice with the company name and legal rights statement. The '©' symbol represents the copyright mark -->
+    </footer>
+    <!-- Lightbox Modal HTML - MUST be before the script that references it -->
+<div id="lightbox" class="lightbox">
+    <span class="close-lightbox">&times;</span>
+    <img class="lightbox-content" id="lightbox-img">
+    <div class="lightbox-caption" id="lightbox-caption"></div>
+</div>
+
+<script>
+    // ================= MOBILE MENU FUNCTIONALITY =================
+    document.addEventListener('DOMContentLoaded', function() {
+        // Get the navigation element
+        const nav = document.querySelector('nav');
+        
+        // Check if hamburger button already exists (to avoid duplicates)
+        const existingToggle = document.querySelector('.menu-toggle');
+        
+        // Create hamburger button if it doesn't exist
+        if (!existingToggle && nav) {
+            // Create the hamburger button element
+            const toggleBtn = document.createElement('button');
+            toggleBtn.className = 'menu-toggle';
+            toggleBtn.setAttribute('aria-label', 'Toggle menu');
+            toggleBtn.setAttribute('aria-expanded', 'false');
+            toggleBtn.innerHTML = '<i class="bx bx-menu"></i>';
+            
+            // Find where to insert the button (after the logo)
+            const logo = document.querySelector('.logo');
+            if (logo && logo.nextSibling) {
+                nav.insertBefore(toggleBtn, logo.nextSibling);
+            } else {
+                nav.insertBefore(toggleBtn, nav.firstChild);
+            }
+        }
+        
+        // Get the menu toggle button and navigation links
+        const menuToggle = document.querySelector('.menu-toggle');
+        const navLinks = document.querySelector('.nav-links');
+        
+        // Add click functionality if both elements exist
+        if (menuToggle && navLinks) {
+            menuToggle.addEventListener('click', function(e) {
+                e.stopPropagation();
+                
+                // Toggle the 'active' class on nav-links
+                navLinks.classList.toggle('active');
+                
+                // Update aria-expanded attribute for accessibility
+                const isExpanded = navLinks.classList.contains('active');
+                menuToggle.setAttribute('aria-expanded', isExpanded);
+                
+                // Change icon between menu and close (X)
+                const icon = menuToggle.querySelector('i');
+                if (icon) {
+                    if (navLinks.classList.contains('active')) {
+                        icon.classList.remove('bx-menu');
+                        icon.classList.add('bx-x');
+                    } else {
+                        icon.classList.remove('bx-x');
+                        icon.classList.add('bx-menu');
+                    }
+                }
+            });
+            
+            // Close the menu when a navigation link is clicked (good user experience)
+            const navLinksItems = navLinks.querySelectorAll('a');
+            navLinksItems.forEach(link => {
+                link.addEventListener('click', function() {
+                    navLinks.classList.remove('active');
+                    
+                    // Reset the menu icon back to hamburger
+                    const icon = menuToggle.querySelector('i');
+                    if (icon) {
+                        icon.classList.remove('bx-x');
+                        icon.classList.add('bx-menu');
+                    }
+                    
+                    // Update aria-expanded
+                    menuToggle.setAttribute('aria-expanded', 'false');
+                });
+            });
+        }
+        
+        // Close menu when clicking outside of it (optional but improves UX)
+        document.addEventListener('click', function(event) {
+            const menuToggle = document.querySelector('.menu-toggle');
+            const navLinks = document.querySelector('.nav-links');
+            
+            if (menuToggle && navLinks && navLinks.classList.contains('active')) {
+                // Check if click is outside both the menu toggle and the nav links
+                if (!menuToggle.contains(event.target) && !navLinks.contains(event.target)) {
+                    navLinks.classList.remove('active');
+                    
+                    // Reset the menu icon back to hamburger
+                    const icon = menuToggle.querySelector('i');
+                    if (icon) {
+                        icon.classList.remove('bx-x');
+                        icon.classList.add('bx-menu');
+                    }
+                    
+                    // Update aria-expanded
+                    menuToggle.setAttribute('aria-expanded', 'false');
+                }
+            }
+        });
+        
+        // Handle window resize - reset menu if screen becomes larger
+        window.addEventListener('resize', function() {
+            const menuToggle = document.querySelector('.menu-toggle');
+            const navLinks = document.querySelector('.nav-links');
+            
+            if (window.innerWidth > 768 && navLinks && navLinks.classList.contains('active')) {
+                navLinks.classList.remove('active');
+                
+                // Reset the menu icon
+                if (menuToggle) {
+                    const icon = menuToggle.querySelector('i');
+                    if (icon) {
+                        icon.classList.remove('bx-x');
+                        icon.classList.add('bx-menu');
+                    }
+                    menuToggle.setAttribute('aria-expanded', 'false');
+                }
+            }
+        });
+
+        // ================= GALLERY LIGHTBOX (FIXED) =================
+        // Get lightbox elements - now they exist because HTML is above this script
+        const lightbox = document.getElementById('lightbox');
+        const lightboxImg = document.getElementById('lightbox-img');
+        const lightboxCaption = document.getElementById('lightbox-caption');
+        const closeBtn = document.querySelector('.close-lightbox');
+        
+        // Get all service card images
+        const cards = document.querySelectorAll('.card img');
+        
+        if (lightbox && cards.length > 0) {
+            // Add click event to each image
+            cards.forEach(img => {
+                img.addEventListener('click', function(e) {
+                    e.stopPropagation();
+                    lightbox.style.display = 'block';
+                    lightboxImg.src = this.src;
+                    // Get the card title (h3) for caption
+                    const cardTitle = this.closest('.card')?.querySelector('h3')?.innerText || '';
+                    lightboxCaption.innerHTML = cardTitle;
+                    document.body.style.overflow = 'hidden'; // Prevent scrolling
+                });
+            });
+            
+            // Close button click
+            if (closeBtn) {
+                closeBtn.addEventListener('click', closeLightbox);
+            }
+            
+            // Click on background (outside image) to close
+            lightbox.addEventListener('click', function(e) {
+                if (e.target === lightbox) {
+                    closeLightbox();
+                }
+            });
+            
+            // ESC key to close
+            document.addEventListener('keydown', function(e) {
+                if (e.key === 'Escape' && lightbox.style.display === 'block') {
+                    closeLightbox();
+                }
+            });
+        }
+        
+        function closeLightbox() {
+            const lightbox = document.getElementById('lightbox');
+            if (lightbox) {
+                lightbox.style.display = 'none';
+                document.body.style.overflow = 'auto';
+            }
+        }
+    });
+</script>
+<script src="js/script.js"></script>
+</body>
+</html>

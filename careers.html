@@ -1,0 +1,714 @@
+<!DOCTYPE html>
+<!-- ================= DOCUMENT TYPE DECLARATION ================= -->
+<!-- Declares the document type and version as HTML5 for proper browser rendering and standards compliance -->
+<html lang="en">
+<!-- Root element of the HTML document. The 'lang' attribute sets the primary language to English for accessibility (screen readers) and SEO -->
+
+<head>
+    <!-- Contains meta-information about the document that is not displayed on the page itself -->
+    
+    <meta charset="UTF-8">
+    <!-- Specifies the character encoding for the document as UTF-8, which supports almost all international characters, symbols, and emojis -->
+    
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Ensures proper responsive behavior on mobile devices by setting the viewport width equal to the device's width and initial zoom scale to 1.0 -->
+     
+     <meta name="keywords" content="cybersecurity analyst, cloud security engineer, data analytics specialist, senior IT support, IT careers South Africa, tech jobs Johannesburg, Nass Tech Solution careers, IT recruitment, technology jobs, cybersecurity jobs, cloud jobs, data analyst jobs">
+    
+    <title>Careers | Nass Tech Solution | Join Our IT Team</title>
+    <!-- Sets the title of the web page, which appears on the browser tab and in search engine results -->
+    
+    <meta name="description" content="Explore exciting IT career opportunities at Nass Tech Solution. Cybersecurity, Cloud Security, Data Analytics, and Senior IT Support roles available with competitive salaries and benefits. Join our growing tech team today!">
+    <!-- SEO meta description that appears in search engine results to attract potential candidates -->
+    
+    <!-- External CSS file link preserved as per your original structure -->
+    <link rel="stylesheet" href="css/style.css">
+    <!-- Links an external CSS stylesheet (located at css/style.css) to control the visual styling and layout of the page -->
+    
+    <!-- Boxicons CDN -->
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <!-- Imports the Boxicons icon library from a CDN, providing a wide range of scalable vector icons for use throughout the page -->
+    
+    <!-- Favicon -->
+    <link rel="icon" href="images/logo/logo.png">
+    <!-- Sets the favicon (small icon displayed in the browser tab) to the company logo image -->
+</head>
+
+<body>
+    <!-- Contains all visible content of the web page that users interact with -->
+
+    <!-- ================= NAVIGATION BAR ================= -->
+    <!-- Creates the primary navigation menu at the top of the page for site-wide navigation -->
+    <nav>
+        <!-- Semantic HTML5 element specifically for navigation sections -->
+        
+        <div class="logo">
+            <!-- Container for the company logo -->
+            <img src="images/logo/logo.png" alt="Nass Tech Logo">
+            <!-- Displays the company logo image. The 'alt' attribute provides alternative text for screen readers and when images fail to load -->
+        </div>
+        
+        <ul class="nav-links">
+            <!-- Unordered list holding all primary navigation links -->
+            <li><a href="index.html">Home</a></li>
+            <!-- Link to the Home page -->
+            <li><a href="about_us.html">About</a></li>
+            <!-- Link to the About Us page -->
+            <li><a href="services.html">Services</a></li>
+            <!-- Link to the Services page -->
+            <li><a href="careers.html" class="active">Careers</a></li>
+            <!-- Link to the Careers page. The 'active' class highlights the current page in the navigation menu -->
+            <li><a href="client-portal.html">Client Portal</a></li>
+            <!-- Link to the Client Portal (login-protected area for existing clients) -->
+            <li><a href="enquiries.html">Enquiry</a></li>
+            <!-- Link to the Enquiry page -->
+            <li><a href="contact_us.html">Contact</a></li>
+            <!-- Link to the Contact Us page -->
+            <li><a href="blog.html">Blog</a></li>
+            <!-- Link to the company Blog page -->
+        </ul>
+        
+        <div class="nav-buttons">
+            <!-- Container for authentication/account action buttons -->
+            <a href="#" class="btn">Sign In</a>
+            <!-- Sign In button (placeholder link). Allows existing users to log into their account -->
+            <a href="#" class="btn logout">Sign Out</a>
+            <!-- Sign Out button with additional 'logout' class for specific styling -->
+        </div>
+    </nav>
+
+    <!-- ================= HERO SECTION ================= -->
+    <!-- Large promotional banner area at the top of the page to grab user attention and introduce the careers page -->
+    <section class="hero">
+        <!-- Inline style creates a dark gradient overlay over a background image. The overlay improves text readability -->
+        
+        <div class="hero-content">
+            <!-- Container for the hero text content -->
+            <h1>Join Our Team</h1>
+            <!-- Main heading of the hero section - encourages visitors to consider employment -->
+            <p>Build your career with Nass Tech Solution. We're looking for passionate IT professionals.</p>
+            <!-- Supporting subheading describing the target candidates (passionate IT professionals) -->
+        </div>
+    </section>
+
+    <!-- ================= WHY WORK WITH US SECTION ================= -->
+    <!-- Highlights the benefits and advantages of working at the company to attract potential candidates -->
+    <section class="section">
+        <h2>Why Work With Us?</h2>
+        
+        <div class="contact-grid">
+            <!-- BENEFIT CARD 1: Growth Opportunities -->
+            <div class="contact-card">
+                <div class="contact-icon"><i class='bx bx-line-chart'></i></div>
+                <h3>Growth Opportunities</h3>
+                <p>Continuous learning and career advancement paths.</p>
+            </div>
+            
+            <!-- BENEFIT CARD 2: Great Culture -->
+            <div class="contact-card">
+                <div class="contact-icon"><i class='bx bx-heart'></i></div>
+                <h3>Great Culture</h3>
+                <p>Collaborative, innovative, and inclusive work environment.</p>
+            </div>
+            
+            <!-- BENEFIT CARD 3: Competitive Pay -->
+            <div class="contact-card">
+                <div class="contact-icon"><i class='bx bx-dollar'></i></div>
+                <h3>Competitive Pay</h3>
+                <p>Attractive salaries and performance bonuses.</p>
+            </div>
+            
+            <!-- BENEFIT CARD 4: Remote Friendly -->
+            <div class="contact-card">
+                <div class="contact-icon"><i class='bx bx-home-smile'></i></div>
+                <h3>Remote Friendly</h3>
+                <p>Flexible work arrangements available.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- ================= OPEN POSITIONS SECTION WITH DETAILED SKILLS & QUALIFICATIONS ================= -->
+    <!-- Displays current job vacancies with comprehensive details including qualifications, skills, and requirements -->
+    <section class="section">
+        <h2>Open Positions</h2>
+        
+        <div class="cards">
+            
+            <!-- ================= JOB CARD 1: Cybersecurity Analyst ================= -->
+            <div class="card">
+                <img src="images/careers/cyber_analyst.jpg" alt="Cybersecurity Analyst">
+                <h3>🔒 Cybersecurity Analyst</h3>
+                
+                <!-- Basic visible job information -->
+                <p><strong>📍 Location:</strong> Johannesburg / Remote (Hybrid model)</p>
+                <p><strong>⏰ Job Type:</strong> Full-time | Permanent</p>
+                <p><strong>💰 Salary:</strong> R530,000 – R880,000 per annum</p>
+                <div class="price">R530k - R880k</div>
+                
+                <!-- VIEW DETAILS BUTTON - Toggles hidden content -->
+                <button class="view-details-btn">
+                    <i class='bx bx-chevron-down'></i> View Details
+                </button>
+                
+                <!-- HIDDEN DETAILS SECTION - Initially collapsed, expands when button clicked -->
+                <div class="card-details">
+                    <p><strong>📚 Minimum Qualifications:</strong></p>
+                    <ul>
+                        <li>Bachelor's degree in Computer Science, Information Security, or related field</li>
+                        <li>CompTIA Security+ certification (required)</li>
+                        <li>CEH (Certified Ethical Hacker) or CySA+ (preferred)</li>
+                        <li>3+ years of experience in security operations or SOC environment</li>
+                    </ul>
+                    
+                    <p><strong>⚙️ Technical Skills:</strong></p>
+                    <ul>
+                        <li>SIEM platforms (Splunk, IBM QRadar, or Azure Sentinel)</li>
+                        <li>Network security protocols (TCP/IP, DNS, VPN, Firewalls)</li>
+                        <li>Vulnerability scanning tools (Nessus, OpenVAS, Qualys)</li>
+                        <li>Endpoint detection and response (CrowdStrike, Defender ATP)</li>
+                        <li>Incident response and forensic analysis</li>
+                    </ul>
+                    
+                    <p><strong>🌟 Soft Skills:</strong> Analytical thinking, attention to detail, strong communication, ability to work under pressure.</p>
+                    <p><strong>📅 Application Deadline:</strong> 30 July 2026</p>
+                </div>
+                
+                <a href="#" class="btn apply-now-btn" data-job="🔒 Cybersecurity Analyst" style="margin-top: 15px;">Apply Now</a>
+            </div>
+            
+            <!-- ================= JOB CARD 2: Cloud Security Engineer ================= -->
+            <div class="card">
+                <img src="images/careers/cloud_secu.png" alt="Cloud Security Engineer">
+                <h3>☁️ Cloud Security Engineer</h3>
+                
+                <!-- Basic visible job information -->
+                <p><strong>📍 Location:</strong> Pretoria / Hybrid (2 days onsite)</p>
+                <p><strong>⏰ Job Type:</strong> Full-time | Permanent</p>
+                <p><strong>💰 Salary:</strong> R324,000 – R420,000 per annum</p>
+                <div class="price">R324k - R420k</div>
+                
+                <!-- VIEW DETAILS BUTTON -->
+                <button class="view-details-btn">
+                    <i class='bx bx-chevron-down'></i> View Details
+                </button>
+                
+                <!-- HIDDEN DETAILS SECTION -->
+                <div class="card-details">
+                    <p><strong>📚 Minimum Qualifications:</strong></p>
+                    <ul>
+                        <li>Bachelor's degree in IT, Computer Engineering, or equivalent experience</li>
+                        <li>AWS Certified Solutions Architect or Azure Security Engineer Associate</li>
+                        <li>4+ years of cloud security or DevOps security experience</li>
+                        <li>Knowledge of POPIA, GDPR, and ISO 27001 compliance frameworks</li>
+                    </ul>
+                    
+                    <p><strong>⚙️ Technical Skills:</strong></p>
+                    <ul>
+                        <li>AWS (GuardDuty, Inspector, WAF, IAM, KMS)</li>
+                        <li>Azure Security Center, Microsoft Defender for Cloud</li>
+                        <li>Infrastructure as Code (Terraform, CloudFormation)</li>
+                        <li>Container security (Docker, Kubernetes, Aqua Security)</li>
+                        <li>CI/CD security integration (Jenkins, GitLab CI, GitHub Actions)</li>
+                    </ul>
+                    
+                    <p><strong>🌟 Soft Skills:</strong> Problem-solving, teamwork, documentation, proactive mindset.</p>
+                    <p><strong>📅 Application Deadline:</strong> 15 August 2026</p>
+                </div>
+                
+                <a href="#" class="btn apply-now-btn" data-job="☁️ Cloud Security Engineer" style="margin-top: 15px;">Apply Now</a>
+            </div>
+            
+            <!-- ================= JOB CARD 3: Data & Analytics Specialist ================= -->
+            <div class="card">
+                <img src="images/careers/data_analyst.jpg" alt="Data & Analytics Specialist">
+                <h3>📊 Data & Analytics Specialist</h3>
+                
+                <!-- Basic visible job information -->
+                <p><strong>📍 Location:</strong> Cape Town / Fully Remote (SA only)</p>
+                <p><strong>⏰ Job Type:</strong> Full-time | Contract (12 months, renewable)</p>
+                <p><strong>💰 Salary:</strong> R70,000 – R90,000 per month</p>
+                <div class="price">R70k - R90k <span>/month</span></div>
+                
+                <!-- VIEW DETAILS BUTTON -->
+                <button class="view-details-btn">
+                    <i class='bx bx-chevron-down'></i> View Details
+                </button>
+                
+                <!-- HIDDEN DETAILS SECTION -->
+                <div class="card-details">
+                    <p><strong>📚 Minimum Qualifications:</strong></p>
+                    <ul>
+                        <li>Bachelor's degree in Statistics, Mathematics, Data Science, or related field</li>
+                        <li>Microsoft Power BI Data Analyst certification (PL-300) or equivalent</li>
+                        <li>2+ years of experience in data analysis and business intelligence</li>
+                        <li>Strong SQL proficiency (joins, subqueries, window functions)</li>
+                    </ul>
+                    
+                    <p><strong>⚙️ Technical Skills:</strong></p>
+                    <ul>
+                        <li>Python (Pandas, NumPy, Matplotlib, Seaborn)</li>
+                        <li>SQL databases (PostgreSQL, MySQL, SQL Server)</li>
+                        <li>Power BI / Tableau dashboard development and DAX</li>
+                        <li>Excel advanced (PivotTables, Power Query, macros)</li>
+                        <li>ETL processes and data warehousing concepts</li>
+                    </ul>
+                    
+                    <p><strong>🌟 Soft Skills:</strong> Storytelling with data, business acumen, attention to detail, collaboration.</p>
+                    <p><strong>📅 Application Deadline:</strong> 10 August 2026</p>
+                </div>
+                
+                <a href="#" class="btn apply-now-btn" data-job="📊 Data & Analytics Specialist" style="margin-top: 15px;">Apply Now</a>
+            </div>
+            
+            <!-- ================= JOB CARD 4: Senior IT Support Engineer ================= -->
+            <div class="card">
+                <img src="images/careers/engineer.jpg" alt="Senior IT Support Engineer">
+                <h3>💻 Senior IT Support Engineer</h3>
+                
+                <!-- Basic visible job information -->
+                <p><strong>📍 Location:</strong> Durban (On-site)</p>
+                <p><strong>⏰ Job Type:</strong> Full-time | Permanent</p>
+                <p><strong>💰 Salary:</strong> R18,000 – R37,000 per month</p>
+                <div class="price">R18k - R37k <span>/month</span></div>
+                
+                <!-- VIEW DETAILS BUTTON -->
+                <button class="view-details-btn">
+                    <i class='bx bx-chevron-down'></i> View Details
+                </button>
+                
+                <!-- HIDDEN DETAILS SECTION -->
+                <div class="card-details">
+                    <p><strong>📚 Minimum Qualifications:</strong></p>
+                    <ul>
+                        <li>Diploma or Degree in IT, Computer Systems, or relevant experience</li>
+                        <li>CompTIA A+ and Network+ (required)</li>
+                        <li>Microsoft 365 Certified: Modern Desktop Administrator (preferred)</li>
+                        <li>5+ years of experience in technical support, with at least 2 years in a senior/lead role</li>
+                    </ul>
+                    
+                    <p><strong>⚙️ Technical Skills:</strong></p>
+                    <ul>
+                        <li>Windows Server (2016/2019/2022) administration</li>
+                        <li>Active Directory, Group Policy, DNS, DHCP</li>
+                        <li>Microsoft 365 / Exchange Online administration</li>
+                        <li>Networking fundamentals (VLANs, routing, switching, TCP/IP)</li>
+                        <li>ITSM tools (Jira Service Management, ServiceNow, or similar)</li>
+                        <li>Basic PowerShell scripting for automation</li>
+                    </ul>
+                    
+                    <p><strong>🌟 Soft Skills:</strong> Leadership, customer service, time management, documentation, mentorship.</p>
+                    <p><strong>📅 Application Deadline:</strong> 25 July 2026</p>
+                </div>
+                
+                <a href="#" class="btn apply-now-btn" data-job="💻 Senior IT Support Engineer" style="margin-top: 15px;">Apply Now</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- ================= LIFE AT NASS TECH SECTION ================= -->
+    <!-- Showcases company culture and employee benefits to attract talent -->
+    <section class="section">
+        <h2>Life at Nass Tech Solution</h2>
+        <div style="display: flex; flex-wrap: wrap; gap: 20px; justify-content: center;">
+            
+            <!-- Culture Card 1: Team Events -->
+            <div style="max-width: 300px; text-align: center;">
+                <i class='bx bx-group' style="font-size: 48px; color: #0072ff;"></i>
+                <h3>Team Events</h3>
+                <p>Monthly hackathons, quarterly team buildings, and annual tech conferences.</p>
+            </div>
+            
+            <!-- Culture Card 2: Learning Budget -->
+            <div style="max-width: 300px; text-align: center;">
+                <i class='bx bx-book-open' style="font-size: 48px; color: #0072ff;"></i>
+                <h3>Learning Budget</h3>
+                <p>R15,000 annual training allowance per employee for courses & certifications.</p>
+            </div>
+            
+            <!-- Culture Card 3: Recognition Program -->
+            <div style="max-width: 300px; text-align: center;">
+                <i class='bx bx-medal' style="font-size: 48px; color: #0072ff;"></i>
+                <h3>Recognition Program</h3>
+                <p>Peer-nominated awards, quarterly MVP bonuses, and career growth plans.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- ================= JOB APPLICATION MODAL ================= -->
+    <!-- Modal popup form that appears when user clicks "Apply Now" on any job card -->
+    <div id="jobApplicationModal" class="job-modal" style="display: none; position: fixed; top: 0; left: 0; width: 100%; height: 100%; background: rgba(0,0,0,0.8); z-index: 10000; align-items: center; justify-content: center;">
+        <!-- Modal container with fixed positioning overlay. Initially hidden (display: none) -->
+        
+        <div style="background: white; width: 90%; max-width: 650px; max-height: 90vh; overflow-y: auto; border-radius: 20px; font-family: Arial, sans-serif;">
+            <!-- Modal content container with scrollable area for long forms -->
+            
+            <!-- Modal Header Section -->
+            <div style="background: linear-gradient(135deg, #002a3a, #0a5c7e); color: white; padding: 20px; border-radius: 20px 20px 0 0; display: flex; justify-content: space-between; align-items: center;">
+                <h3 style="margin: 0;"><i class='bx bxs-briefcase'></i> Job Application Form</h3>
+                <button id="closeJobModalBtn" style="background: rgba(255,255,255,0.2); border: none; color: white; font-size: 28px; cursor: pointer; width: 40px; height: 40px; border-radius: 50%;">&times;</button>
+            </div>
+            
+            <!-- Modal Body - Application Form -->
+            <div style="padding: 30px;">
+                <div id="jobFormMessage" style="margin-bottom: 20px; padding: 10px; border-radius: 8px;"></div>
+                
+                <form id="jobApplicationForm">
+                    <!-- Two-column layout for first and last name -->
+                    <div style="display: flex; gap: 15px; flex-wrap: wrap; margin-bottom: 20px;">
+                        <div style="flex: 1;">
+                            <label style="font-weight: bold;">First Name *</label>
+                            <input type="text" id="jobFirstName" required style="width: 100%; padding: 12px; border: 2px solid #e2e8f0; border-radius: 10px;">
+                        </div>
+                        <div style="flex: 1;">
+                            <label style="font-weight: bold;">Last Name *</label>
+                            <input type="text" id="jobLastName" required style="width: 100%; padding: 12px; border: 2px solid #e2e8f0; border-radius: 10px;">
+                        </div>
+                    </div>
+                    
+                    <!-- Email Address Field -->
+                    <div style="margin-bottom: 20px;">
+                        <label style="font-weight: bold;">Email Address *</label>
+                        <input type="email" id="jobEmail" required style="width: 100%; padding: 12px; border: 2px solid #e2e8f0; border-radius: 10px;">
+                    </div>
+                    
+                    <!-- Phone Number Field -->
+                    <div style="margin-bottom: 20px;">
+                        <label style="font-weight: bold;">Phone Number (incl. country code) *</label>
+                        <input type="tel" id="jobPhone" required placeholder="+27 XX XXX XXXX" style="width: 100%; padding: 12px; border: 2px solid #e2e8f0; border-radius: 10px;">
+                    </div>
+                    
+                    <!-- Position Dropdown -->
+                    <div style="margin-bottom: 20px;">
+                        <label style="font-weight: bold;">Position Applying For *</label>
+                        <select id="jobPosition" required style="width: 100%; padding: 12px; border: 2px solid #e2e8f0; border-radius: 10px;">
+                            <option value="">-- Select a position --</option>
+                            <option>🔒 Cybersecurity Analyst</option>
+                            <option>☁️ Cloud Security Engineer</option>
+                            <option>📊 Data & Analytics Specialist</option>
+                            <option>💻 Senior IT Support Engineer</option>
+                        </select>
+                    </div>
+                    
+                    <!-- Experience Level Dropdown -->
+                    <div style="margin-bottom: 20px;">
+                        <label style="font-weight: bold;">Years of Relevant Experience *</label>
+                        <select id="jobExperience" required style="width: 100%; padding: 12px; border: 2px solid #e2e8f0; border-radius: 10px;">
+                            <option value="">Select range</option>
+                            <option>0-2 years</option>
+                            <option>3-5 years</option>
+                            <option>6-8 years</option>
+                            <option>8+ years</option>
+                        </select>
+                    </div>
+                    
+                    <!-- Skills Checkbox Section -->
+                    <div style="margin-bottom: 20px;">
+                        <label style="font-weight: bold;">Relevant Skills (Select all that apply) *</label>
+                        <div style="display: flex; flex-wrap: wrap; gap: 10px; margin-top: 8px;">
+                            <label style="display: flex; align-items: center; gap: 5px;"><input type="checkbox" class="skill-check" value="SIEM/Splunk"> SIEM/Splunk</label>
+                            <label style="display: flex; align-items: center; gap: 5px;"><input type="checkbox" class="skill-check" value="Cloud Security (AWS/Azure)"> Cloud Security</label>
+                            <label style="display: flex; align-items: center; gap: 5px;"><input type="checkbox" class="skill-check" value="Python/SQL"> Python/SQL</label>
+                            <label style="display: flex; align-items: center; gap: 5px;"><input type="checkbox" class="skill-check" value="Power BI/Tableau"> Power BI/Tableau</label>
+                            <label style="display: flex; align-items: center; gap: 5px;"><input type="checkbox" class="skill-check" value="Windows Server/AD"> Windows Server/AD</label>
+                            <label style="display: flex; align-items: center; gap: 5px;"><input type="checkbox" class="skill-check" value="Network Security"> Network Security</label>
+                        </div>
+                    </div>
+                    
+                    <!-- CV Upload Field -->
+                    <div style="margin-bottom: 20px;">
+                        <label style="font-weight: bold;">Upload CV (PDF, DOC, DOCX) *</label>
+                        <input type="file" id="jobCV" accept=".pdf,.doc,.docx" required style="width: 100%; padding: 8px; border: 2px solid #e2e8f0; border-radius: 10px;">
+                        <small style="display: block; margin-top: 5px;">Max file size: 5MB (PDF or Word documents only)</small>
+                    </div>
+                    
+                    <!-- Cover Letter Textarea -->
+                    <div style="margin-bottom: 20px;">
+                        <label style="font-weight: bold;">Cover Letter / Why you're a great fit</label>
+                        <textarea id="jobCoverLetter" rows="4" placeholder="Tell us about your relevant achievements, certifications, and motivation to join Nass Tech..." style="width: 100%; padding: 12px; border: 2px solid #e2e8f0; border-radius: 10px;"></textarea>
+                    </div>
+                    
+                    <!-- Terms and Conditions Checkbox -->
+                    <div style="margin-bottom: 25px;">
+                        <label style="display: flex; align-items: center; gap: 12px;">
+                            <input type="checkbox" id="jobTerms"> I confirm that the information provided is accurate and I agree to the <a href="#">Privacy Policy</a> *
+                        </label>
+                    </div>
+                    
+                    <!-- Submit Button -->
+                    <button type="submit" style="width: 100%; padding: 14px; background: linear-gradient(135deg, #00c6ff, #0072ff); color: white; border: none; border-radius: 40px; font-weight: bold; font-size: 16px; cursor: pointer;">Submit Application</button>
+                </form>
+            </div>
+        </div>
+    </div>
+<!-- ================= COMPANY GALLERY WITH LIGHTBOX ================= -->
+<section class="section">
+    <h2>Company Gallery</h2>
+    <p style="text-align: center; margin-bottom: 2rem; color: #666;">Click on any image to view full size</p>
+    
+    <div class="gallery-grid">
+        <div class="gallery-item" data-image="images/compaygallery/modernoffice.jpeg">
+            <img src="images/compaygallery/modernoffice.jpeg" alt="Modern Office Space">
+            <div class="gallery-overlay">
+                <i class='bx bx-expand'></i>
+                <span>View Larger</span>
+            </div>
+        </div>
+        
+        <div class="gallery-item" data-image="images/compaygallery/teammeeting.jpeg">
+            <img src="images/compaygallery/teammeeting.jpeg" alt="Team Meeting">
+            <div class="gallery-overlay">
+                <i class='bx bx-expand'></i>
+                <span>View Larger</span>
+            </div>
+        </div>
+        
+        <div class="gallery-item" data-image="images/compaygallery/event.jpeg">
+            <img src="images/compaygallery/event.jpeg" alt="Hackathon Event">
+            <div class="gallery-overlay">
+                <i class='bx bx-expand'></i>
+                <span>View Larger</span>
+            </div>
+        </div>
+        
+        <div class="gallery-item" data-image="images/compaygallery/awardceremony.jpeg">
+            <img src="images/compaygallery/awardceremony.jpeg" alt="Award Ceremony">
+            <div class="gallery-overlay">
+                <i class='bx bx-expand'></i>
+                <span>View Larger</span>
+            </div>
+        </div>
+        
+        <div class="gallery-item" data-image="images/compaygallery/training.jpeg">
+            <img src="images/compaygallery/training.jpeg" alt="training">
+            <div class="gallery-overlay">
+                <i class='bx bx-expand'></i>
+                <span>View Larger</span>
+            </div>
+        </div>
+        
+        <div class="gallery-item" data-image="images/compaygallery/remoteteams.jpeg">
+            <img src="images/compaygallery/remoteteams.jpeg" alt="remote teams">
+            <div class="gallery-overlay">
+                <i class='bx bx-expand'></i>
+                <span>View Larger</span>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- ================= LIGHTBOX MODAL ================= -->
+<div id="lightboxModal" class="lightbox-modal" style="display: none;">
+    <div class="lightbox-content">
+        <button class="lightbox-close" id="lightboxCloseBtn">&times;</button>
+        <button class="lightbox-nav lightbox-prev" id="lightboxPrevBtn">
+            <i class='bx bx-chevron-left'></i>
+        </button>
+        <img id="lightboxImage" src="" alt="">
+        <button class="lightbox-nav lightbox-next" id="lightboxNextBtn">
+            <i class='bx bx-chevron-right'></i>
+        </button>
+        <div class="lightbox-caption" id="lightboxCaption"></div>
+        <div class="lightbox-counter" id="lightboxCounter"></div>
+    </div>
+</div>
+    <!-- ================= FOOTER ================= -->
+    <footer>
+        <p>© 2026 Nass Tech Solution | All Rights Reserved | Recruitment Privacy Notice</p>
+    </footer>
+
+    <script>
+    // ================= MOBILE MENU FUNCTIONALITY =================
+    // This script adds a hamburger menu button and makes the navigation responsive on mobile devices
+    
+    document.addEventListener('DOMContentLoaded', function() {
+        // Get the navigation element
+        const nav = document.querySelector('nav');
+        
+        // Check if hamburger button already exists (to avoid duplicates)
+        const existingToggle = document.querySelector('.menu-toggle');
+        
+        // Create hamburger button if it doesn't exist
+        if (!existingToggle && nav) {
+            // Create the hamburger button element
+            const toggleBtn = document.createElement('button');
+            toggleBtn.className = 'menu-toggle';
+            toggleBtn.setAttribute('aria-label', 'Toggle menu');
+            toggleBtn.setAttribute('aria-expanded', 'false');
+            toggleBtn.innerHTML = '<i class="bx bx-menu"></i>'; // Using Boxicons menu icon
+            
+            // Find where to insert the button (after the logo)
+            const logo = document.querySelector('.logo');
+            if (logo && logo.nextSibling) {
+                nav.insertBefore(toggleBtn, logo.nextSibling);
+            } else {
+                nav.insertBefore(toggleBtn, nav.firstChild);
+            }
+        }
+        
+        // Get the menu toggle button and navigation links
+        const menuToggle = document.querySelector('.menu-toggle');
+        const navLinks = document.querySelector('.nav-links');
+        
+        // Add click functionality if both elements exist
+        if (menuToggle && navLinks) {
+            menuToggle.addEventListener('click', function(e) {
+                e.stopPropagation();
+                
+                // Toggle the 'active' class on nav-links
+                navLinks.classList.toggle('active');
+                
+                // Update aria-expanded attribute for accessibility
+                const isExpanded = navLinks.classList.contains('active');
+                menuToggle.setAttribute('aria-expanded', isExpanded);
+                
+                // Change icon between menu and close (X)
+                const icon = menuToggle.querySelector('i');
+                if (icon) {
+                    if (navLinks.classList.contains('active')) {
+                        icon.classList.remove('bx-menu');
+                        icon.classList.add('bx-x');
+                    } else {
+                        icon.classList.remove('bx-x');
+                        icon.classList.add('bx-menu');
+                    }
+                }
+            });
+            
+            // Close the menu when a navigation link is clicked (good user experience)
+            const navLinksItems = navLinks.querySelectorAll('a');
+            navLinksItems.forEach(link => {
+                link.addEventListener('click', function() {
+                    navLinks.classList.remove('active');
+                    
+                    // Reset the menu icon back to hamburger
+                    const icon = menuToggle.querySelector('i');
+                    if (icon) {
+                        icon.classList.remove('bx-x');
+                        icon.classList.add('bx-menu');
+                    }
+                    
+                    // Update aria-expanded
+                    menuToggle.setAttribute('aria-expanded', 'false');
+                });
+            });
+        }
+        
+        // Close menu when clicking outside of it (optional but improves UX)
+        document.addEventListener('click', function(event) {
+            const menuToggle = document.querySelector('.menu-toggle');
+            const navLinks = document.querySelector('.nav-links');
+            
+            if (menuToggle && navLinks && navLinks.classList.contains('active')) {
+                // Check if click is outside both the menu toggle and the nav links
+                if (!menuToggle.contains(event.target) && !navLinks.contains(event.target)) {
+                    navLinks.classList.remove('active');
+                    
+                    // Reset the menu icon back to hamburger
+                    const icon = menuToggle.querySelector('i');
+                    if (icon) {
+                        icon.classList.remove('bx-x');
+                        icon.classList.add('bx-menu');
+                    }
+                    
+                    // Update aria-expanded
+                    menuToggle.setAttribute('aria-expanded', 'false');
+                }
+            }
+        });
+        
+        // Handle window resize - reset menu if screen becomes larger
+        window.addEventListener('resize', function() {
+            const menuToggle = document.querySelector('.menu-toggle');
+            const navLinks = document.querySelector('.nav-links');
+            
+            if (window.innerWidth > 768 && navLinks && navLinks.classList.contains('active')) {
+                navLinks.classList.remove('active');
+                
+                // Reset the menu icon
+                if (menuToggle) {
+                    const icon = menuToggle.querySelector('i');
+                    if (icon) {
+                        icon.classList.remove('bx-x');
+                        icon.classList.add('bx-menu');
+                    }
+                    menuToggle.setAttribute('aria-expanded', 'false');
+                }
+            }
+        });
+    });
+    // Lightbox Functionality
+document.addEventListener('DOMContentLoaded', function() {
+    const modal = document.getElementById('lightboxModal');
+    const modalImg = document.getElementById('lightboxImage');
+    const caption = document.getElementById('lightboxCaption');
+    const counter = document.getElementById('lightboxCounter');
+    const closeBtn = document.getElementById('lightboxCloseBtn');
+    const prevBtn = document.getElementById('lightboxPrevBtn');
+    const nextBtn = document.getElementById('lightboxNextBtn');
+    
+    let currentIndex = 0;
+    let images = [];
+    
+    // Get all gallery items
+    document.querySelectorAll('.gallery-item').forEach((item, index) => {
+        const img = item.querySelector('img');
+        images.push({
+            src: item.dataset.image || img.src,
+            alt: img.alt
+        });
+        
+        item.addEventListener('click', () => openLightbox(index));
+    });
+    
+    function openLightbox(index) {
+        currentIndex = index;
+        updateLightboxImage();
+        modal.style.display = 'flex';
+        document.body.style.overflow = 'hidden';
+    }
+    
+    function updateLightboxImage() {
+        modalImg.src = images[currentIndex].src;
+        modalImg.alt = images[currentIndex].alt;
+        caption.textContent = images[currentIndex].alt;
+        counter.textContent = `${currentIndex + 1} / ${images.length}`;
+    }
+    
+    function closeLightbox() {
+        modal.style.display = 'none';
+        document.body.style.overflow = '';
+    }
+    
+    function prevImage() {
+        currentIndex = (currentIndex - 1 + images.length) % images.length;
+        updateLightboxImage();
+    }
+    
+    function nextImage() {
+        currentIndex = (currentIndex + 1) % images.length;
+        updateLightboxImage();
+    }
+    
+    // Event listeners
+    closeBtn.addEventListener('click', closeLightbox);
+    prevBtn.addEventListener('click', prevImage);
+    nextBtn.addEventListener('click', nextImage);
+    
+    modal.addEventListener('click', (e) => {
+        if (e.target === modal) closeLightbox();
+    });
+    
+    document.addEventListener('keydown', (e) => {
+        if (modal.style.display === 'flex') {
+            if (e.key === 'Escape') closeLightbox();
+            if (e.key === 'ArrowLeft') prevImage();
+            if (e.key === 'ArrowRight') nextImage();
+        }
+    });
+});
+</script>
+
+    <!-- ================= EXTERNAL JAVASCRIPT ================= -->
+    <script src="js/script.js"></script>
+</body>
+</html>
