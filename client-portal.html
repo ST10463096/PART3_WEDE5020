@@ -1,0 +1,830 @@
+<!DOCTYPE html>
+<!-- Declares the document type and version as HTML5 for proper browser rendering and standards compliance -->
+<html lang="en">
+<!-- Root element of the HTML document. The 'lang' attribute sets the primary language to English for accessibility (screen readers) and SEO -->
+
+<head>
+    <!-- Contains meta-information about the document that is not displayed on the page itself -->
+    
+    <meta charset="UTF-8">
+    <!-- Specifies the character encoding for the document as UTF-8, which supports almost all international characters, symbols, and emojis -->
+    
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Ensures proper responsive behavior on mobile devices by setting the viewport width equal to the device's width and initial zoom scale to 1.0 -->
+     <meta name="description" content="Log in to the Nass Tech Solution client portal to access support tickets, download invoices, track service status, and manage your IT services. Secure 24/7 client access.">
+     <meta name="keywords" content="client portal, IT client portal, login, support tickets, invoices, service status, knowledge base, Nass Tech portal, secure client access">
+    
+    <title>Client Portal | Nass Tech Solution</title>
+    <!-- Sets the title of the web page, which appears on the browser tab and in search engine results -->
+    
+    <link rel="stylesheet" href="css/style.css">
+    <!-- Links an external CSS stylesheet (located at css/style.css) to control the visual styling and layout of the page -->
+    
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <!-- Imports the Boxicons icon library from a CDN (Content Delivery Network), providing a wide range of scalable vector icons for use throughout the page -->
+    
+    <link rel="icon" href="images/logo/logo.png">
+    <!-- Sets the favicon (small icon displayed in the browser tab) to the company logo image -->
+</head>
+
+<body>
+    <!-- Contains all visible content of the web page that users interact with -->
+
+    <!-- ================= NAVIGATION BAR ================= -->
+    <!-- Creates the primary navigation menu at the top of the page for site-wide navigation -->
+    <nav>
+        <!-- Semantic HTML5 element specifically for navigation sections -->
+        
+        <div class="logo">
+            <!-- Container for the company logo -->
+            <img src="images/logo/logo.png" alt="Nass Tech Logo">
+            <!-- Displays the company logo image. The 'alt' attribute provides alternative text for screen readers and when images fail to load -->
+        </div>
+        
+        <ul class="nav-links">
+            <!-- Unordered list holding all primary navigation links -->
+            <li><a href="index.html">Home</a></li>
+            <!-- Link to the Home page -->
+            <li><a href="about_us.html">About</a></li>
+            <!-- Link to the About Us page -->
+            <li><a href="services.html">Services</a></li>
+            <!-- Link to the Services page -->
+            <li><a href="careers.html">Careers</a></li>
+            <!-- Link to the Careers/Jobs page -->
+            <li><a href="client-portal.html" class="active">Client Portal</a></li>
+            <!-- Link to the Client Portal page. The 'active' class highlights the current page in the navigation menu -->
+            <li><a href="enquiries.html">Enquiry</a></li>
+            <!-- Link to the Enquiry page -->
+            <li><a href="contact_us.html">Contact</a></li>
+            <!-- Link to the Contact Us page -->
+            <li><a href="blog.html">Blog</a></li>
+            <!-- Link to the company Blog page -->
+        </ul>
+        
+        <div class="nav-buttons">
+            <!-- Container for authentication/account action buttons -->
+            <a href="#" class="btn">Sign In</a>
+            <!-- Sign In button (placeholder link). Allows existing users to log into their account -->
+            <a href="#" class="btn logout">Sign Out</a>
+            <!-- Sign Out button with additional 'logout' class for specific styling -->
+        </div>
+    </nav>
+
+    <!-- ================= HERO SECTION ================= -->
+    <!-- Large promotional banner area at the top of the page to introduce the client portal -->
+    <section class="hero" style="background: linear-gradient(135deg, rgba(0,42,58,0.85), rgba(0,114,255,0.75)), url('images/hero/portal.png'); background-size: cover; background-position: center;">
+        <!-- Inline style creates a dark gradient overlay (135-degree angle from dark teal to semi-transparent blue) over a background image (portal.png). 
+             The overlay improves text readability. 'background-size: cover' ensures the image covers the entire section; 'background-position: center' centers the image -->
+        
+        <div class="hero-content">
+            <!-- Container for the hero text content -->
+            <h1>Client Portal</h1>
+            <!-- Main heading of the hero section - clearly identifies this as the client portal page -->
+            <p>Access your tickets, invoices, and support resources in one secure place.</p>
+            <!-- Supporting subheading describing the key features available in the portal -->
+        </div>
+    </section>
+
+    <!-- ================= LOGIN SECTION ================= -->
+    <!-- Two-column layout: left side shows portal benefits, right side contains the login form -->
+    <section class="section">
+        <!-- Generic section container with class 'section' for consistent styling -->
+        
+        <div class="enquiry-grid">
+            <!-- Container using CSS Grid layout to display two columns: left side (info card) and right side (login form) -->
+            
+            <!-- ================= LEFT COLUMN: PORTAL INFO CARD ================= -->
+            <!-- Displays the key features and benefits of using the client portal -->
+            <div class="enquiry-info-card">
+                <!-- Container for the informational card that highlights portal capabilities -->
+                
+                <div class="info-icon">
+                    <!-- Container for the icon at the top of the info card -->
+                    <i class='bx bx-shield-alt'></i>
+                    <!-- Boxicons shield icon representing security and protection -->
+                </div>
+                
+                <h3>Secure Client Access</h3>
+                <!-- Heading emphasizing the security of the portal -->
+                
+                <p>Your data is protected with enterprise-grade encryption and security measures.</p>
+                <!-- Description highlighting security features (encryption, enterprise-grade protection) -->
+                
+                <ul class="info-list">
+                    <!-- Unordered list of specific portal features/benefits with checkmark icons -->
+                    <li><i class='bx bx-check-circle'></i> View Support Tickets</li>
+                    <!-- Benefit: ability to see all support requests and their statuses -->
+                    <li><i class='bx bx-check-circle'></i> Download Invoices</li>
+                    <!-- Benefit: access to billing documents and payment records -->
+                    <li><i class='bx bx-check-circle'></i> Track Service Status</li>
+                    <!-- Benefit: monitor the operational status of subscribed services -->
+                    <li><i class='bx bx-check-circle'></i> Access Knowledge Base</li>
+                    <!-- Benefit: self-help documentation and tutorials -->
+                    <li><i class='bx bx-check-circle'></i> Request New Services</li>
+                    <!-- Benefit: ability to order additional services without contacting sales -->
+                </ul>
+            </div>
+
+            <!-- ================= RIGHT COLUMN: LOGIN FORM ================= -->
+            <!-- Authentication form for clients to access their secure portal dashboard -->
+            <div class="enquiry-form-container">
+                <!-- Container for the login form with styling matching the info card -->
+                
+                <h3><i class='bx bx-log-in-circle'></i> Portal Login</h3>
+                <!-- Form heading with login circle icon indicating this is an authentication form -->
+                
+                <form id="portalLoginForm">
+                    <!-- Form element with unique ID 'portalLoginForm' for JavaScript access.
+                         No 'action' or 'method' attributes because submission is handled entirely by JavaScript (demo/client-side handling) -->
+                    
+                    <!-- Email Address Field -->
+                    <div class="input-group">
+                        <!-- Container for each form field with consistent spacing -->
+                        <label><i class='bx bx-envelope'></i> Email Address *</label>
+                        <!-- Label with envelope icon. Asterisk indicates this field is required -->
+                        <input type="email" id="portalEmail" placeholder="Enter your registered email" required>
+                        <!-- Email input field for the client's registered email address.
+                             'type="email"' provides browser validation for proper email format -->
+                    </div>
+                    
+                    <!-- Password Field -->
+                    <div class="input-group">
+                        <label><i class='bx bx-lock-alt'></i> Password *</label>
+                        <!-- Label with lock icon representing password/security -->
+                        <input type="password" id="portalPassword" placeholder="Enter your password" required>
+                        <!-- Password input field. 'type="password"' masks the characters as they are typed -->
+                    </div>
+                    
+                    <!-- Submit Button -->
+                    <button type="submit" class="btn-submit">
+                        <!-- Submit button with custom styling class -->
+                        <i class='bx bx-log-in'></i> Access Portal
+                        <!-- Login icon visually indicates the action of logging in -->
+                    </button>
+                </form>
+                
+                <!-- Portal Help Links -->
+                <p style="text-align: center; margin-top: 20px;">
+                    <!-- Centered paragraph with top margin for spacing -->
+                    <a href="#" id="forgotPasswordLink">Forgot password?</a> | 
+                    <!-- 'Forgot password' link with inline JavaScript alert for demo purposes. 
+                         In production, this would trigger a proper password reset flow -->
+                    <a href="#" id="registerNewClientLink">New client? Register</a>
+                    <!-- 'Register' link for new clients with demo alert.
+                         In production, this would redirect to a registration form -->
+                </p>
+                
+                <!-- Response Message Container -->
+                <p id="portalResponse" style="text-align:center; margin-top:20px; display:none;"></p>
+                <!-- Hidden paragraph element that displays a success message after login.
+                     Initially hidden (display:none). When shown, it provides visual feedback to the user -->
+            </div>
+        </div>
+    </section>
+
+    <!-- ================= PORTAL FEATURES SECTION ================= -->
+    <!-- Displays the main features available inside the client portal using icon cards -->
+    <section class="section">
+        <h2>Portal Features</h2>
+        <!-- Section heading introducing the portal's capabilities -->
+        
+        <div class="cards">
+            <!-- Container using CSS Grid or Flexbox to display feature cards in a responsive grid layout -->
+            
+            <!-- ================= FEATURE CARD 1: Support Tickets ================= -->
+            <div class="card">
+                <!-- Individual card component for one portal feature -->
+                <i class='bx bx-ticket' style="font-size: 48px; color: #0072ff; margin-top: 20px;"></i>
+                <!-- Boxicons ticket icon representing support tickets.
+                     Inline styles: large font size (48px), brand blue color, top margin for spacing -->
+                <h3>Support Tickets</h3>
+                <!-- Feature title -->
+                <p>Submit and track IT support requests with real-time status updates.</p>
+                <!-- Description highlighting ticket submission, tracking, and live status updates -->
+            </div>
+            
+            <!-- ================= FEATURE CARD 2: Billing & Invoices ================= -->
+            <div class="card">
+                <i class='bx bx-receipt' style="font-size: 48px; color: #0072ff; margin-top: 20px;"></i>
+                <!-- Boxicons receipt icon representing billing/invoices -->
+                <h3>Billing & Invoices</h3>
+                <!-- Feature title -->
+                <p>View payment history, download invoices, and manage subscriptions.</p>
+                <!-- Description covering payment tracking, document downloads, and subscription management -->
+            </div>
+            
+            <!-- ================= FEATURE CARD 3: Service Analytics ================= -->
+            <div class="card">
+                <i class='bx bx-bar-chart-alt-2' style="font-size: 48px; color: #0072ff; margin-top: 20px;"></i>
+                <!-- Boxicons bar chart icon representing analytics and metrics -->
+                <h3>Service Analytics</h3>
+                <!-- Feature title -->
+                <p>Monitor your service usage, uptime, and performance metrics.</p>
+                <!-- Description focusing on usage tracking, uptime monitoring, and performance data -->
+            </div>
+            
+            <!-- ================= FEATURE CARD 4: Knowledge Base ================= -->
+            <div class="card">
+                <i class='bx bx-book-open' style="font-size: 48px; color: #0072ff; margin-top: 20px;"></i>
+                <!-- Boxicons open book icon representing knowledge/documentation -->
+                <h3>Knowledge Base</h3>
+                <!-- Feature title -->
+                <p>Access tutorials, documentation, and best practice guides.</p>
+                <!-- Description covering self-help resources, technical docs, and best practices -->
+            </div>
+        </div>
+    </section>
+
+    <!-- ================= REGISTRATION MODAL ================= -->
+<div id="registrationModal" style="display: none; position: fixed; top: 0; left: 0; width: 100%; height: 100%; background: rgba(0,0,0,0.7); z-index: 10005; align-items: center; justify-content: center;">
+    <div style="background: white; width: 90%; max-width: 550px; max-height: 85vh; overflow-y: auto; border-radius: 20px; animation: fadeIn 0.3s ease;">
+        <div style="background: linear-gradient(135deg, #002a3a, #0a5c7e); color: white; padding: 20px; border-radius: 20px 20px 0 0; display: flex; justify-content: space-between; align-items: center;">
+            <h3 style="margin: 0;"><i class='bx bx-user-plus'></i> Register New Account</h3>
+            <button id="closeModalBtn" style="background: rgba(255,255,255,0.2); border: none; color: white; font-size: 24px; cursor: pointer; width: 35px; height: 35px; border-radius: 50%;">&times;</button>
+        </div>
+        <div style="padding: 25px;">
+            <div id="regFormMessage" style="margin-bottom: 15px;"></div>
+            <form id="registrationForm">
+                <div style="display: flex; gap: 15px; flex-wrap: wrap; margin-bottom: 15px;">
+                    <div style="flex: 1;">
+                        <label>First Name *</label>
+                        <input type="text" id="regFirstName" required style="width: 100%; padding: 10px; border: 2px solid #e0e6ed; border-radius: 10px;">
+                    </div>
+                    <div style="flex: 1;">
+                        <label>Last Name *</label>
+                        <input type="text" id="regLastName" required style="width: 100%; padding: 10px; border: 2px solid #e0e6ed; border-radius: 10px;">
+                    </div>
+                </div>
+                <div style="margin-bottom: 15px;">
+                    <label>Email Address *</label>
+                    <input type="email" id="regEmail" required style="width: 100%; padding: 10px; border: 2px solid #e0e6ed; border-radius: 10px;">
+                </div>
+                <div style="margin-bottom: 15px;">
+                    <label>Phone Number</label>
+                    <input type="tel" id="regPhone" style="width: 100%; padding: 10px; border: 2px solid #e0e6ed; border-radius: 10px;">
+                </div>
+                <div style="margin-bottom: 15px;">
+                    <label>Company Name</label>
+                    <input type="text" id="regCompany" style="width: 100%; padding: 10px; border: 2px solid #e0e6ed; border-radius: 10px;">
+                </div>
+                <div style="margin-bottom: 15px;">
+                    <label>Password *</label>
+                    <input type="password" id="regPassword" required style="width: 100%; padding: 10px; border: 2px solid #e0e6ed; border-radius: 10px;">
+                    <small style="color: #666;">Minimum 12 characters with uppercase, lowercase, number & special character</small>
+                </div>
+                <div style="margin-bottom: 15px;">
+                    <label>Confirm Password *</label>
+                    <input type="password" id="regConfirmPassword" required style="width: 100%; padding: 10px; border: 2px solid #e0e6ed; border-radius: 10px;">
+                </div>
+                <div style="margin-bottom: 20px;">
+                    <label style="display: flex; align-items: center; gap: 10px;">
+                        <input type="checkbox" id="regTerms"> I agree to the <a href="#">Terms of Service</a> and <a href="#">Privacy Policy</a> *
+                    </label>
+                </div>
+                <button type="submit" style="width: 100%; padding: 12px; background: linear-gradient(135deg, #11998e, #38ef7d); color: white; border: none; border-radius: 30px; font-weight: 600; cursor: pointer;">Register Account</button>
+                <p style="text-align: center; margin-top: 15px;">
+                    Already have an account? <a href="#" id="switchToLoginLink" style="color: #0072ff;">Sign In</a>
+                </p>
+            </form>
+        </div>
+    </div>
+</div>
+
+<!-- ================= FORGOT PASSWORD MODAL ================= -->
+<div id="forgotPasswordModal" style="display: none; position: fixed; top: 0; left: 0; width: 100%; height: 100%; background: rgba(0,0,0,0.7); z-index: 10006; align-items: center; justify-content: center;">
+    <div style="background: white; width: 90%; max-width: 500px; border-radius: 20px; animation: fadeIn 0.3s ease;">
+        <div style="background: linear-gradient(135deg, #002a3a, #0a5c7e); color: white; padding: 20px; border-radius: 20px 20px 0 0; display: flex; justify-content: space-between; align-items: center;">
+            <h3 style="margin: 0;"><i class='bx bx-lock-alt'></i> Reset Password</h3>
+            <button id="closeForgotModalBtn" style="background: rgba(255,255,255,0.2); border: none; color: white; font-size: 24px; cursor: pointer; width: 35px; height: 35px; border-radius: 50%;">&times;</button>
+        </div>
+        <div style="padding: 25px;">
+            <div id="forgotFormMessage" style="margin-bottom: 15px;"></div>
+            
+            <!-- Step 1: Enter Email -->
+            <div id="forgotPasswordForm">
+                <div style="margin-bottom: 15px;">
+                    <label>Email Address *</label>
+                    <input type="email" id="resetEmail" required style="width: 100%; padding: 10px; border: 2px solid #e0e6ed; border-radius: 10px;">
+                </div>
+                <button type="button" id="sendCodeBtn" style="width: 100%; padding: 12px; background: linear-gradient(135deg, #00c6ff, #0072ff); color: white; border: none; border-radius: 30px; font-weight: 600; cursor: pointer;">Send Verification Code</button>
+                <p style="text-align: center; margin-top: 15px;">
+                    <a href="#" id="backToLoginLink" style="color: #0072ff;">Back to Sign In</a>
+                </p>
+            </div>
+            
+            <!-- Step 2: Verify Code -->
+            <div id="verificationSection" style="display: none;">
+                <div style="margin-bottom: 15px;">
+                    <label>Verification Code *</label>
+                    <input type="text" id="verificationCode" placeholder="Enter 6-digit code" required style="width: 100%; padding: 10px; border: 2px solid #e0e6ed; border-radius: 10px;">
+                </div>
+                <button type="button" id="verifyCodeBtn" style="width: 100%; padding: 12px; background: linear-gradient(135deg, #00c6ff, #0072ff); color: white; border: none; border-radius: 30px; font-weight: 600; cursor: pointer;">Verify Code</button>
+                <p style="text-align: center; margin-top: 15px;">
+                    <a href="#" id="resendCodeLink" style="color: #0072ff;">Resend Code</a> | 
+                    <a href="#" id="backToEmailLink" style="color: #666;">Back to Email</a>
+                </p>
+            </div>
+            
+            <!-- Step 3: Reset Password -->
+            <div id="resetPasswordSection" style="display: none;">
+                <div style="margin-bottom: 15px;">
+                    <label>New Password *</label>
+                    <input type="password" id="newPassword" required style="width: 100%; padding: 10px; border: 2px solid #e0e6ed; border-radius: 10px;">
+                    <small style="color: #666;">Minimum 12 characters with uppercase, lowercase, number & special character</small>
+                </div>
+                <div style="margin-bottom: 20px;">
+                    <label>Confirm New Password *</label>
+                    <input type="password" id="confirmNewPassword" required style="width: 100%; padding: 10px; border: 2px solid #e0e6ed; border-radius: 10px;">
+                </div>
+                <button type="button" id="resetPasswordBtn" style="width: 100%; padding: 12px; background: linear-gradient(135deg, #11998e, #38ef7d); color: white; border: none; border-radius: 30px; font-weight: 600; cursor: pointer;">Reset Password</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+<style>
+@keyframes fadeIn {
+    from { opacity: 0; transform: translateY(-30px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+</style>
+
+    <!-- ================= FOOTER ================= -->
+    <!-- Bottom section of the page containing copyright and legal information -->
+    <footer>
+        <!-- Semantic HTML5 element for footer content -->
+        <p>© 2026 Nass Tech Solution | All Rights Reserved</p>
+        <!-- Copyright notice with the company name, current year, and legal rights statement -->
+    </footer>
+<script>
+// ==================== COMPLETE WORKING JAVASCRIPT ====================
+document.addEventListener('DOMContentLoaded', function() {
+    
+    // ==================== REGISTRATION MODAL ====================
+    const modal = document.getElementById('registrationModal');
+    const closeModalBtn = document.getElementById('closeModalBtn');
+    const regForm = document.getElementById('registrationForm');
+    const regFormMessage = document.getElementById('regFormMessage');
+    
+    function showRegMessage(msg, isError = true) {
+        if(regFormMessage) {
+            regFormMessage.innerHTML = `<span style="color: ${isError ? '#e74c3c' : '#27ae60'}; background: ${isError ? '#fee' : '#e8f8f0'}; padding: 10px; border-radius: 12px; display: inline-block; width: 100%;">${msg}</span>`;
+            setTimeout(() => { if (regFormMessage.innerHTML.includes(msg)) regFormMessage.innerHTML = ''; }, 4000);
+        }
+    }
+    
+    window.openRegistrationModal = function() {
+        if(modal) {
+            modal.style.display = 'flex';
+            if (regForm) regForm.reset();
+            if (regFormMessage) regFormMessage.innerHTML = '';
+        }
+    }
+    
+    function closeModal() { if(modal) modal.style.display = 'none'; }
+    
+    if (closeModalBtn) closeModalBtn.addEventListener('click', closeModal);
+    if (modal) {
+        window.addEventListener('click', function(e) { if (e.target === modal) closeModal(); });
+    }
+    
+    if (regForm) {
+        regForm.addEventListener('submit', function(e) {
+            e.preventDefault();
+            
+            const firstName = document.getElementById('regFirstName')?.value.trim() || '';
+            const lastName = document.getElementById('regLastName')?.value.trim() || '';
+            const email = document.getElementById('regEmail')?.value.trim() || '';
+            const password = document.getElementById('regPassword')?.value || '';
+            const confirm = document.getElementById('regConfirmPassword')?.value || '';
+            const termsAccepted = document.getElementById('regTerms')?.checked || false;
+            
+            if (!firstName || !lastName || !email || !password || !confirm) {
+                showRegMessage('❌ Please fill all required fields (*).');
+                return;
+            }
+            if (!email.includes('@') || !email.includes('.')) {
+                showRegMessage('⚠️ Please enter a valid email address.');
+                return;
+            }
+            if (password.length < 8) {
+                showRegMessage('❌ Password must be at least 8 characters long.');
+                return;
+            }
+            if (password !== confirm) {
+                showRegMessage('❗ Passwords do not match.');
+                return;
+            }
+            if (!termsAccepted) {
+                showRegMessage('📜 You must agree to the Terms of Service.');
+                return;
+            }
+            
+            const newUser = {
+                firstName: firstName, lastName: lastName, email: email,
+                company: document.getElementById('regCompany')?.value.trim() || "Individual Client",
+                phone: document.getElementById('regPhone')?.value.trim() || "Not provided",
+                password: password, registeredAt: new Date().toISOString()
+            };
+            
+            let demoUsers = JSON.parse(localStorage.getItem('nass_portal_users') || '[]');
+            if (demoUsers.some(u => u.email === email)) {
+                showRegMessage('⚠️ An account with this email already exists.');
+                return;
+            }
+            
+            demoUsers.push(newUser);
+            localStorage.setItem('nass_portal_users', JSON.stringify(demoUsers));
+            showRegMessage(`🎉 Welcome ${firstName}! Registration successful! You can now login.`, false);
+            
+            setTimeout(() => {
+                closeModal();
+                const loginEmailField = document.getElementById('portalEmail');
+                if (loginEmailField) loginEmailField.value = email;
+                const portalResponse = document.getElementById('portalResponse');
+                if (portalResponse) {
+                    portalResponse.style.display = 'block';
+                    portalResponse.innerHTML = `<i class='bx bx-check-circle'></i> ✅ Account created successfully! Please login.`;
+                    portalResponse.style.color = '#155724';
+                    portalResponse.style.background = '#d4edda';
+                    portalResponse.style.padding = '15px';
+                    portalResponse.style.borderRadius = '10px';
+                    setTimeout(() => { portalResponse.style.display = 'none'; }, 4000);
+                }
+            }, 2000);
+        });
+    }
+    
+    const registerNewClientLink = document.getElementById('registerNewClientLink');
+    if (registerNewClientLink) {
+        registerNewClientLink.addEventListener('click', function(e) { 
+            e.preventDefault(); 
+            window.openRegistrationModal(); 
+        });
+    }
+    
+    const switchToLoginLink = document.getElementById('switchToLoginLink');
+    if (switchToLoginLink) {
+        switchToLoginLink.addEventListener('click', function(e) { 
+            e.preventDefault(); 
+            closeModal(); 
+        });
+    }
+    
+    // ==================== FORGOT PASSWORD - WORKING VERSION ====================
+    const forgotModal = document.getElementById('forgotPasswordModal');
+    const closeForgotModalBtn = document.getElementById('closeForgotModalBtn');
+    
+    const forgotFormDiv = document.getElementById('forgotPasswordForm');
+    const verificationSection = document.getElementById('verificationSection');
+    const resetPasswordSection = document.getElementById('resetPasswordSection');
+    const forgotFormMessage = document.getElementById('forgotFormMessage');
+    
+    let tempResetEmail = '';
+    let tempVerificationCode = '';
+    
+    function showForgotMessage(msg, isError = true) {
+        if(forgotFormMessage) {
+            forgotFormMessage.innerHTML = `<span style="color: ${isError ? '#e74c3c' : '#27ae60'}; background: ${isError ? '#fee' : '#e8f8f0'}; padding: 10px; border-radius: 12px; display: inline-block; width: 100%;">${msg}</span>`;
+            setTimeout(() => { if (forgotFormMessage.innerHTML.includes(msg)) forgotFormMessage.innerHTML = ''; }, 5000);
+        }
+    }
+    
+    function openForgotModal() {
+        if(forgotModal) {
+            forgotModal.style.display = 'flex';
+            if (forgotFormDiv) forgotFormDiv.style.display = 'block';
+            if (verificationSection) verificationSection.style.display = 'none';
+            if (resetPasswordSection) resetPasswordSection.style.display = 'none';
+            const resetEmailInput = document.getElementById('resetEmail');
+            if(resetEmailInput) resetEmailInput.value = '';
+            const verificationCodeInput = document.getElementById('verificationCode');
+            if(verificationCodeInput) verificationCodeInput.value = '';
+            const newPasswordInput = document.getElementById('newPassword');
+            if(newPasswordInput) newPasswordInput.value = '';
+            const confirmNewPasswordInput = document.getElementById('confirmNewPassword');
+            if(confirmNewPasswordInput) confirmNewPasswordInput.value = '';
+            if(forgotFormMessage) forgotFormMessage.innerHTML = '';
+            tempResetEmail = '';
+            tempVerificationCode = '';
+        }
+    }
+    
+    function closeForgotModal() { 
+        if(forgotModal) forgotModal.style.display = 'none'; 
+    }
+    
+    if (closeForgotModalBtn) closeForgotModalBtn.addEventListener('click', closeForgotModal);
+    if (forgotModal) {
+        window.addEventListener('click', function(e) { if (e.target === forgotModal) closeForgotModal(); });
+    }
+    
+    // Handle Forgot Password link click (the one in the login form)
+    const forgotPasswordTrigger = document.getElementById('forgotPasswordLink');
+    if (forgotPasswordTrigger) {
+        forgotPasswordTrigger.addEventListener('click', function(e) {
+            e.preventDefault();
+            openForgotModal();
+        });
+    }
+    
+    // Handle Send Code button (now using sendCodeBtn ID)
+    const sendCodeBtn = document.getElementById('sendCodeBtn');
+    if (sendCodeBtn) {
+        sendCodeBtn.addEventListener('click', function(e) {
+            e.preventDefault();
+            const email = document.getElementById('resetEmail')?.value.trim() || '';
+            if (!email) {
+                showForgotMessage('❌ Please enter your email address.');
+                return;
+            }
+            
+            let demoUsers = JSON.parse(localStorage.getItem('nass_portal_users') || '[]');
+            const userExists = demoUsers.some(u => u.email === email);
+            const isDemoEmail = (email === "demo@nasstech.com");
+            
+            if (!userExists && !isDemoEmail) {
+                showForgotMessage('❌ No account found with this email address. Please register first.');
+                return;
+            }
+            
+            // Generate 6-digit verification code
+            tempVerificationCode = Math.floor(100000 + Math.random() * 900000).toString();
+            tempResetEmail = email;
+            
+            // Store in sessionStorage
+            sessionStorage.setItem('resetCode_' + email, tempVerificationCode);
+            sessionStorage.setItem('resetExpiry_' + email, Date.now() + 300000);
+            
+            // Show the code to user
+            alert(`📧 DEMO MODE: Your verification code is: ${tempVerificationCode}\n\n(This would be sent to ${email} in production)`);
+            showForgotMessage(`✅ Verification code sent to ${email}. Use code: ${tempVerificationCode}`, false);
+            
+            // Switch to verification section
+            if (forgotFormDiv) forgotFormDiv.style.display = 'none';
+            if (verificationSection) verificationSection.style.display = 'block';
+            if (forgotFormMessage) forgotFormMessage.innerHTML = '';
+        });
+    }
+    
+    // Handle Verify Code button (now using verifyCodeBtn ID)
+    const verifyCodeBtn = document.getElementById('verifyCodeBtn');
+    if (verifyCodeBtn) {
+        verifyCodeBtn.addEventListener('click', function(e) {
+            e.preventDefault();
+            const enteredCode = document.getElementById('verificationCode')?.value.trim() || '';
+            if (!enteredCode) {
+                showForgotMessage('❌ Please enter the verification code.');
+                return;
+            }
+            
+            const storedCode = sessionStorage.getItem('resetCode_' + tempResetEmail);
+            const expiryTime = sessionStorage.getItem('resetExpiry_' + tempResetEmail);
+            
+            if (!storedCode || !expiryTime) {
+                showForgotMessage('❌ No verification code found. Please request a new code.');
+                return;
+            }
+            if (Date.now() > parseInt(expiryTime)) {
+                showForgotMessage('❌ Verification code has expired. Please request a new code.');
+                return;
+            }
+            if (enteredCode !== storedCode) {
+                showForgotMessage('❌ Invalid verification code. Please try again.');
+                return;
+            }
+            
+            showForgotMessage('✅ Code verified! Please enter your new password.', false);
+            
+            // Switch to reset password section
+            if (verificationSection) verificationSection.style.display = 'none';
+            if (resetPasswordSection) resetPasswordSection.style.display = 'block';
+            if (forgotFormMessage) forgotFormMessage.innerHTML = '';
+        });
+    }
+    
+    // Handle Resend Code link
+    const resendCodeLink = document.getElementById('resendCodeLink');
+    if (resendCodeLink) {
+        resendCodeLink.addEventListener('click', function(e) {
+            e.preventDefault();
+            if (!tempResetEmail) {
+                showForgotMessage('❌ Session expired. Please restart the process.');
+                if (forgotFormDiv) forgotFormDiv.style.display = 'block';
+                if (verificationSection) verificationSection.style.display = 'none';
+                return;
+            }
+            
+            tempVerificationCode = Math.floor(100000 + Math.random() * 900000).toString();
+            sessionStorage.setItem('resetCode_' + tempResetEmail, tempVerificationCode);
+            sessionStorage.setItem('resetExpiry_' + tempResetEmail, Date.now() + 300000);
+            alert(`📧 DEMO MODE: Your new verification code is: ${tempVerificationCode}`);
+            showForgotMessage(`✅ New verification code sent: ${tempVerificationCode}`, false);
+            const verificationCodeInput = document.getElementById('verificationCode');
+            if(verificationCodeInput) verificationCodeInput.value = '';
+        });
+    }
+    
+    // Handle Back to Email link
+    const backToEmailLink = document.getElementById('backToEmailLink');
+    if (backToEmailLink) {
+        backToEmailLink.addEventListener('click', function(e) {
+            e.preventDefault();
+            if (forgotFormDiv) forgotFormDiv.style.display = 'block';
+            if (verificationSection) verificationSection.style.display = 'none';
+            if (forgotFormMessage) forgotFormMessage.innerHTML = '';
+        });
+    }
+    
+    // Handle Back to Sign In link
+    const backToLoginLink = document.getElementById('backToLoginLink');
+    if (backToLoginLink) {
+        backToLoginLink.addEventListener('click', function(e) {
+            e.preventDefault();
+            closeForgotModal();
+        });
+    }
+    
+    // Handle Reset Password button (now using resetPasswordBtn ID)
+    const resetPasswordBtn = document.getElementById('resetPasswordBtn');
+    if (resetPasswordBtn) {
+        resetPasswordBtn.addEventListener('click', function(e) {
+            e.preventDefault();
+            const newPassword = document.getElementById('newPassword')?.value || '';
+            const confirmPassword = document.getElementById('confirmNewPassword')?.value || '';
+            
+            if (!newPassword || !confirmPassword) {
+                showForgotMessage('❌ Please enter and confirm your new password.');
+                return;
+            }
+            if (newPassword.length < 8) {
+                showForgotMessage('❌ Password must be at least 8 characters long.');
+                return;
+            }
+            if (newPassword !== confirmPassword) {
+                showForgotMessage('❌ Passwords do not match.');
+                return;
+            }
+            
+            let demoUsers = JSON.parse(localStorage.getItem('nass_portal_users') || '[]');
+            const userIndex = demoUsers.findIndex(u => u.email === tempResetEmail);
+            
+            if (userIndex !== -1) {
+                demoUsers[userIndex].password = newPassword;
+                localStorage.setItem('nass_portal_users', JSON.stringify(demoUsers));
+                showForgotMessage('✅ Password reset successful! You can now login with your new password.', false);
+            } else if (tempResetEmail === "demo@nasstech.com") {
+                showForgotMessage('✅ Demo account: Password reset successful!', false);
+            } else {
+                showForgotMessage('❌ User not found.');
+                return;
+            }
+            
+            // Clear stored code
+            sessionStorage.removeItem('resetCode_' + tempResetEmail);
+            sessionStorage.removeItem('resetExpiry_' + tempResetEmail);
+            
+            setTimeout(() => {
+                closeForgotModal();
+                const loginEmailField = document.getElementById('portalEmail');
+                if (loginEmailField) loginEmailField.value = tempResetEmail;
+                const portalResponse = document.getElementById('portalResponse');
+                if (portalResponse) {
+                    portalResponse.style.display = 'block';
+                    portalResponse.innerHTML = `<i class='bx bx-check-circle'></i> ✅ Password reset successful! Please login with your new password.`;
+                    portalResponse.style.color = '#155724';
+                    portalResponse.style.background = '#d4edda';
+                    portalResponse.style.padding = '15px';
+                    portalResponse.style.borderRadius = '10px';
+                    setTimeout(() => { portalResponse.style.display = 'none'; }, 4000);
+                }
+            }, 2000);
+        });
+    }
+    
+    // ==================== LOGIN FORM HANDLER ====================
+    const portalForm = document.getElementById('portalLoginForm');
+    if(portalForm) {
+        portalForm.addEventListener('submit', function(e) {
+            e.preventDefault();
+            
+            const email = document.getElementById('portalEmail').value.trim();
+            const password = document.getElementById('portalPassword').value.trim();
+            
+            if(email === "" || password === "") {
+                alert("Please enter both email and password.");
+                return;
+            }
+            
+            let demoUsers = JSON.parse(localStorage.getItem('nass_portal_users') || '[]');
+            const matchedUser = demoUsers.find(u => u.email === email && u.password === password);
+            const isDemoAccount = (email === "demo@nasstech.com" && password === "demo123");
+            
+            if(matchedUser || isDemoAccount) {
+                const userName = matchedUser ? matchedUser.firstName : 'Demo User';
+                const portalResponseDiv = document.getElementById('portalResponse');
+                if(portalResponseDiv) {
+                    portalResponseDiv.style.display = 'block';
+                    portalResponseDiv.innerHTML = `<i class='bx bx-check-circle'></i> ✅ Welcome back ${userName}! Loading dashboard...`;
+                    portalResponseDiv.style.color = '#155724';
+                    portalResponseDiv.style.background = '#d4edda';
+                    portalResponseDiv.style.padding = '15px';
+                    portalResponseDiv.style.borderRadius = '10px';
+                }
+                
+                setTimeout(() => {
+                    alert(`Welcome ${userName}! Dashboard would load here.`);
+                    if(portalResponseDiv) {
+                        setTimeout(() => {
+                            portalResponseDiv.style.display = 'none';
+                        }, 1000);
+                    }
+                }, 1500);
+                
+            } else {
+                const portalResponseDiv = document.getElementById('portalResponse');
+                if(portalResponseDiv) {
+                    portalResponseDiv.style.display = 'block';
+                    portalResponseDiv.innerHTML = `<i class='bx bx-error-circle'></i> ❌ Invalid email or password.<br><small>Demo: demo@nasstech.com / demo123<br>Or register a new account.</small>`;
+                    portalResponseDiv.style.color = '#721c24';
+                    portalResponseDiv.style.background = '#f8d7da';
+                    portalResponseDiv.style.padding = '15px';
+                    portalResponseDiv.style.borderRadius = '10px';
+                    
+                    setTimeout(() => {
+                        portalResponseDiv.style.display = 'none';
+                    }, 4000);
+                }
+            }
+        });
+    }
+    
+    // ==================== MOBILE MENU ====================
+    const nav = document.querySelector('nav');
+    const existingToggle = document.querySelector('.menu-toggle');
+    
+    if (!existingToggle && nav) {
+        const toggleBtn = document.createElement('button');
+        toggleBtn.className = 'menu-toggle';
+        toggleBtn.setAttribute('aria-label', 'Toggle menu');
+        toggleBtn.innerHTML = '<i class="bx bx-menu"></i>';
+        toggleBtn.style.cssText = 'display: none; background: none; border: none; font-size: 28px; cursor: pointer; color: white;';
+        const logo = document.querySelector('.logo');
+        if (logo && logo.nextSibling) {
+            nav.insertBefore(toggleBtn, logo.nextSibling);
+        } else {
+            nav.insertBefore(toggleBtn, nav.firstChild);
+        }
+    }
+    
+    const menuToggle = document.querySelector('.menu-toggle');
+    const navLinks = document.querySelector('.nav-links');
+    
+    if (menuToggle && navLinks) {
+        const checkScreenSize = () => {
+            if (window.innerWidth <= 768) {
+                menuToggle.style.display = 'block';
+            } else {
+                menuToggle.style.display = 'none';
+                navLinks.classList.remove('active');
+            }
+        };
+        
+        checkScreenSize();
+        window.addEventListener('resize', checkScreenSize);
+        
+        menuToggle.addEventListener('click', function(e) {
+            e.stopPropagation();
+            navLinks.classList.toggle('active');
+            const icon = menuToggle.querySelector('i');
+            if (icon) {
+                if (navLinks.classList.contains('active')) {
+                    icon.classList.remove('bx-menu');
+                    icon.classList.add('bx-x');
+                } else {
+                    icon.classList.remove('bx-x');
+                    icon.classList.add('bx-menu');
+                }
+            }
+        });
+        
+        const navLinksItems = navLinks.querySelectorAll('a');
+        navLinksItems.forEach(link => {
+            link.addEventListener('click', function() {
+                navLinks.classList.remove('active');
+                const icon = menuToggle.querySelector('i');
+                if (icon) {
+                    icon.classList.remove('bx-x');
+                    icon.classList.add('bx-menu');
+                }
+            });
+        });
+    }
+});
+</script>
+   
+
+    <script src="js/script.js"></script>
+
+</body>
+</html>
